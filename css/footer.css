@@ -1,0 +1,39 @@
+footer{  
+  background-color: #89847c;
+}
+section#footer{
+  color: #d3cec4;
+}
+section#footer .wrap{
+  text-align: center;
+}
+section#footer .wrap p{
+  line-height: 1.4;
+}
+
+footer a.top{
+  width: 51px;
+  height: 67px;
+  display: block;
+  color: #54514e;
+  position: fixed;
+  bottom: 60px;
+  right: 75px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+footer a.top::before{
+  content: "";
+  background-image: url(../img./arrow.svg);
+  width: 24px;
+  height: 24px;
+  transition: all 1s;
+}
+footer a.top:hover::before{  
+  transform: translateY(-7px);
+}

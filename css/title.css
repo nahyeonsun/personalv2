@@ -1,0 +1,59 @@
+/*타이틀영역*/
+div#title{
+   background-color: #ccc8c0;
+   background-size: cover;
+   height: 100vh;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 700px;
+   border-radius: 0 0 30% 30%;
+}
+div#title div.wrap{ /* 하위선택자 */
+   width: 1440px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   color: #786f5c;
+   animation-name: titleB;
+   animation-duration: 0.3s;
+   animation-direction: reverse;
+   animation-timing-function: ease-in;
+   animation-delay: 1s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+} 
+@keyframes titleB{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(80%);
+  }
+}
+div#title h2{ 
+   font-size: 100px;
+   line-height: 1.5;
+}
+div#title h2 span{   
+   font-size: 150px;
+}
+div#title .down {
+   
+}
+div#title .down p{ 
+   background-image: url(../img/swipe.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 45px;
+   height: 45px;
+   font-size: 0;
+   position: relative;
+   left: 50%;
+   top: 114px;
+}

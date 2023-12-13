@@ -1,0 +1,107 @@
+section#about{
+  height: 100vh;
+  box-sizing: border-box;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section#about .wrap{
+  
+}
+section#about .wrap h2{
+ border-bottom: 3px solid;
+ color: #ccc8c0;
+}
+section#about .wrap h2:before{
+   content: "# ";
+   color: #ccc8c0;
+   font-size: 25px;
+   height: 3px;
+   width: 60px;
+   margin-bottom: 10px; 
+}
+section#about .profile{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+section#about .profile> .left{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+section#about .profile> .left img{ 
+  width: 400px;
+  border-radius: 10%;
+  transform: translate(30px, 30px);
+}
+section#about .profile> .left span{  
+  display: flex;
+  gap: 20px;
+  transform: translate(90px, 40px);
+}
+section#about .profile> .left span button{ 
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #a09b91;
+  color: white;
+  border-radius: 19px;
+}
+section#about .profile> .ab{
+  grid-column: 2;
+  grid-row: 1;
+}
+section#about .profile> .ab h3{  
+  font-size: 30px;
+  margin: 50px 0 10px 0;
+  color: #ccc8c0;
+  font-weight: bold;
+}
+section#about .profile> .ab ul{
+  color: #4d473c;
+  font-size: 16px;
+}
+section#about .profile> .ab ul li{
+  line-height: 1.8;
+}
+section#about .profile> .ab ul li:nth-child(4){  
+  margin-top: 40px;
+}
+section#about .profile> .ej{
+  grid-column: 2;
+  grid-row: 2;
+}
+section#about .profile> .ej h3{  
+  font-size: 30px;
+  margin: 50px 0 10px 0;
+  color: #ccc8c0;
+  font-weight: bold;
+}
+section#about .profile> .ej ul{  
+  color: #4d473c;
+  font-size: 16px;
+}
+section#about .profile> .ej ul li{
+  line-height: 1.8;
+}
+section#about .profile> .cre{
+  grid-column: 3;
+  grid-row: 1 / span2;
+}
+section#about .profile> .cre h3{  
+  font-size: 30px;
+  color: #ccc8c0;
+  margin: 50px 0 10px 0;
+  font-weight: bold;
+}
+section#about .profile> .cre ul{
+  color: #4d473c;
+  font-size: 16px;
+}
+section#about .profile> .cre ul li{
+  line-height: 1.8;
+}
+
+
+

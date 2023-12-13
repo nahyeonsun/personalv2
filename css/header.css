@@ -1,0 +1,79 @@
+/* 상단영역 */
+header{
+    /* 너비지정  */
+   margin: 0 auto;/* 중앙정렬 */
+   height: 90px;
+   position: fixed;
+   width: 100%;   
+}
+header .wrap{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 90px;
+   animation-name: headerS;
+   animation-duration: 0.5s;
+   animation-direction: reverse;
+   animation-timing-function: ease-in;
+   animation-delay: 1s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+@keyframes headerS{
+  0%{
+   opacity: 1;
+   transform: translatey(0%);
+  }
+  100%{
+   opacity: 0;   
+   transform: translatey(-100%);
+  }
+}
+}
+header h1{
+  
+}
+header h1 a{
+   font-size: 0;
+   width:120px;
+   height: 72px;
+   background-image: url(../img/rogo1.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+}
+header ul{   
+   display: flex;
+   padding: 50px;
+   height: 100%;
+}
+header ul li{
+   color: white
+   text-transform: uppercase:
+}
+header ul li a{
+   color: #89847c;
+   text-transform: uppercase;
+   font-family: 'Noto Serif Balinese', serif;
+   padding: 10px 25px;
+   height: 100%;
+   display: block;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   font-size: 20px;   
+}
+header ul li a:hover{
+   color: black;
+   font-size: 30px;
+}
+/*자식선택자 : 바로 아래에 있는 선택자(태그) */
+header div.wrap>a{
+   font-size: 0;
+   background-image: url(../img/menu.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 15px 15px;
+}
