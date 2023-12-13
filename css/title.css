@@ -54,6 +54,7 @@ div#title .down p{
    background-size: contain;
    width: 45px;
    height: 45px;
+   display: block;
    font-size: 0;
    position: relative;
    left: 50%;
