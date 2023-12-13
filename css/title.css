@@ -47,6 +47,8 @@ div#title .down {
    
 }
 div#title .down p{ 
+
+}div#title .down p a{ 
    background-image: url(../img/swipe.png);
    background-repeat: no-repeat;
    background-size: contain;
