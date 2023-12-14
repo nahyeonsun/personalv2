@@ -37,7 +37,7 @@ header h1 a{
    font-size: 0;
    width:120px;
    height: 72px;
-   background-image: url(../img/rogo1.png);
+   background-image: url(../img/rogo.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -71,7 +71,7 @@ header ul li a:hover{
 /*자식선택자 : 바로 아래에 있는 선택자(태그) */
 header div.wrap>a{
    font-size: 0;
-   background-image: url(../img/menu.png);
+   background-image: url(../img/ham.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;

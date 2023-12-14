@@ -1,7 +1,5 @@
 /*타이틀영역*/
 div#title{
-   background-color: #ccc8c0;
-   background-size: cover;
    height: 100vh;
    box-sizing: border-box;
    display: flex;
@@ -9,6 +7,9 @@ div#title{
    justify-content: center;
    min-height: 700px;
    border-radius: 0 0 30% 30%;
+   background-image: url(../img/title.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 div#title div.wrap{ /* 하위선택자 */
    width: 1440px;
@@ -52,8 +53,9 @@ div#title .down p{
    background-image: url(../img/swipe.png);
    background-repeat: no-repeat;
    background-size: contain;
-   width: 45px;
-   height: 45px;
+   width: 40px;
+   height: 40px;
+   display: block;
    font-size: 0;
    position: relative;
    left: 50%;
