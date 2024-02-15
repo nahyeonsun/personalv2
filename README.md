@@ -37,7 +37,7 @@
 - 쁨의원	클론코딩 https://nahyeonsun.github.io/ppeum/
 		
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1]![image](https://github.com/nahyeonsun/personalv2/assets/150096472/762e5855-516e-4394-a98f-61a0caa13114)
+![pf1](https://github.com/nahyeonsun/personalv2/assets/150096472/762e5855-516e-4394-a98f-61a0caa13114)
 
 ![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
 
