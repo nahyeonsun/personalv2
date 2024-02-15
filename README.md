@@ -43,8 +43,6 @@
 
 ![ww](https://github.com/pageservice/personal/assets/71798491/30c357e8-d39b-42e6-9c30-0db7706f73d4)
 
-![image](https://github.com/nahyeonsun/personalv2/assets/150096472/75a30d40-a0c3-4e00-9e63-9af6a7991172)
-
 
 ## 작성자 정보
 hyeonsun1223@gmail.com
