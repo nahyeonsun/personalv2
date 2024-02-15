@@ -55,7 +55,7 @@
 ![pf8]
 ![pf9]
 ![www]<h3 align="left">Languages and Tools:</h3>
-<p align="left" style="white-space: pre-line; display: flex; gap: 20px; background-color: #ccc;">
+<p align="left" style="white-space: pre-line; display: flex;">
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 	<img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/>
