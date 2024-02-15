@@ -1,4 +1,4 @@
-![image](https://github.com/nahyeonsun/personalv2/assets/150096472/b943fbe2-2b18-479e-bcb5-5a55836fca2b)(README 파일을 작성할 때, 명확하고 정보를 잘 전달할 수 있도록 노력하세요. 이 파일은 취업 또는 협업 기회를 위한 중요한 자료가 될 수 있습니다.)
+(README 파일을 작성할 때, 명확하고 정보를 잘 전달할 수 있도록 노력하세요. 이 파일은 취업 또는 협업 기회를 위한 중요한 자료가 될 수 있습니다.)
 # 프로젝트 명 : 나현선의 포트폴리오 홈페이지
 
 ## 프로젝트 목표
@@ -38,7 +38,6 @@
 		
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
 ![pf1]![image](https://github.com/nahyeonsun/personalv2/assets/150096472/762e5855-516e-4394-a98f-61a0caa13114)
-
 
 ![pf2](https://github.com/pageservice/personal/assets/71798491/1a7c723b-1e1b-4cb6-9f45-6b17b89482e9)
 
