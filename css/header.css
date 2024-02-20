@@ -1,16 +1,15 @@
 /* 상단영역 */
 header{
-    /* 너비지정  */
-   margin: 0 auto;/* 중앙정렬 */
-   height: 90px;
+   height: 72px;
    position: fixed;
    width: 100%;   
+   z-index: 1;
 }
 header .wrap{
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr auto;
    align-items: center;
-   height: 90px;
+   height: 87px;
    animation-name: headerS;
    animation-duration: 0.5s;
    animation-direction: reverse;
@@ -45,7 +44,6 @@ header h1 a{
 }
 header ul{   
    display: flex;
-   padding: 50px;
    height: 100%;
 }
 header ul li{
@@ -66,14 +64,5 @@ header ul li a{
 }
 header ul li a:hover{
    color: black;
-   font-size: 30px;
-}
-/*자식선택자 : 바로 아래에 있는 선택자(태그) */
-header div.wrap>a{
-   font-size: 0;
-   background-image: url(../img/ham.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   padding: 15px 15px;
+   scale: 1.3;
 }

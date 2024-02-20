@@ -1,5 +1,5 @@
 .wrap{
-  width: 1440px;
+  width: 1500px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -23,14 +23,15 @@
   color: white;
 }
 .h2{
-  font-size: 60px;
+  font-size: 70px;
   text-transform: capitalize;
   margin-bottom: 5px;
   padding-bottom: 1px;
   font-family: 'Noto Serif Balinese', serif;
 }
 .h3{
-  font-size: 44px;
+  font-size: 40px;
+  width: fit-content;
 }
 .h4{
   font-size: 34px;
@@ -64,4 +65,7 @@
 .center{
   text-align: center;
   color: white;
+}
+.hide{
+  display: none;
 }

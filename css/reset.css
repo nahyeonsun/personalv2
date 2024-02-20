@@ -15,7 +15,6 @@ display:none;
 ul{
 list-style:none;
 font-family: 'Noto Sans KR', sans-serif;
-margin-right: 10%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -58,6 +57,7 @@ i,em,address{
 
  
 *{ 
+  padding: 0px;
   margin: 0px;
   line-height: 1;
 }
@@ -71,4 +71,7 @@ a{
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 1px;
+}
+h2{
+  color: #a09d96;
 }

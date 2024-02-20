@@ -11,11 +11,11 @@ section#about .wrap{
 }
 section#about .wrap h2{
  border-bottom: 3px solid;
- color: #ccc8c0;
+ color: #a09d96;
 }
 section#about .wrap h2:before{
    content: "# ";
-   color: #ccc8c0;
+   color: #a09d96;
    font-size: 25px;
    height: 3px;
    width: 60px;
@@ -26,82 +26,91 @@ section#about .profile{
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
 }
-section#about .profile> .left{
+section#about .profile .left{
   grid-column: 1;
   grid-row: 1 / span 2;
 }
-section#about .profile> .left img{ 
+section#about .profile .left img{ 
   width: 400px;
   border-radius: 10%;
   transform: translate(30px, 30px);
 }
-section#about .profile> .left span{  
+section#about .profile .left ul{  
   display: flex;
   gap: 20px;
   transform: translate(90px, 40px);
 }
-section#about .profile> .left span button{ 
-  width: 120px;
-  height: 40px;
-  font-size: 16px;
+section#about .profile .left ul li{
+
   background-color: #a09b91;
   color: white;
-  border-radius: 19px;
 }
-section#about .profile> .ab{
+section#about .profile .left ul li a{ 
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 19px;
+  display: block;
+  line-height: 40px;
+  /*! cursor: pointer; */
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+section#about .profile .ab{
   grid-column: 2;
   grid-row: 1;
 }
-section#about .profile> .ab h3{  
-  font-size: 30px;
+section#about .profile .ab h3{  
   margin: 50px 0 10px 0;
-  color: #ccc8c0;
+  color: #a09d96;
   font-weight: bold;
 }
-section#about .profile> .ab ul{
+section#about .profile .ab ul{
   color: #4d473c;
   font-size: 16px;
 }
-section#about .profile> .ab ul li{
+section#about .profile .ab ul li{
   line-height: 1.8;
+  font-size: 20px;
 }
-section#about .profile> .ab ul li:nth-child(4){  
-  margin-top: 40px;
-}
-section#about .profile> .ej{
+
+section#about .profile .ej{
   grid-column: 2;
   grid-row: 2;
 }
-section#about .profile> .ej h3{  
-  font-size: 30px;
+section#about .profile .ej h3{  
   margin: 50px 0 10px 0;
-  color: #ccc8c0;
+  color: #a09d96;
   font-weight: bold;
 }
-section#about .profile> .ej ul{  
+section#about .profile .ej ul{  
   color: #4d473c;
   font-size: 16px;
 }
-section#about .profile> .ej ul li{
+section#about .profile .ej ul li{
   line-height: 1.8;
+  font-size: 20px;
 }
-section#about .profile> .cre{
+section#about .profile .cre{
   grid-column: 3;
   grid-row: 1 / span2;
 }
-section#about .profile> .cre h3{  
-  font-size: 30px;
-  color: #ccc8c0;
+section#about .profile .cre h3{  
+  color: #a09d96;
   margin: 50px 0 10px 0;
   font-weight: bold;
 }
-section#about .profile> .cre ul{
+section#about .profile .cre ul{
   color: #4d473c;
   font-size: 16px;
 }
-section#about .profile> .cre ul li{
+section#about .profile .cre ul li{
   line-height: 1.8;
+  font-size: 20px;
 }
 
-
+section#about ul{
+  padding: 0;
+}
 

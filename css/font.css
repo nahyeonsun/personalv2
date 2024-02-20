@@ -1,4 +1,8 @@
-body{
+/* body{
    font-family: 'Noto Serif Balinese', serif;
+   font-weight: 400;
+} */
+body{
+   font-family: 'Noto Sans KR', sans-serif;
    font-weight: 400;
 }

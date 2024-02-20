@@ -6,16 +6,14 @@ section#skill{
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
-  border-radius: 30% 30% 0 0;
-  background: ;
 }
 section#skill .wrap{
+  
 }
 section#skill .wrap h2{
   border-bottom: 3px solid;
   color: #fff;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 section#skill .wrap h2:before{
   content: "# ";
@@ -39,6 +37,7 @@ section#skill .wrap ul li{
    width: 50%;
    align-items: center;
    position: relative;
+   font-size: 18px;
 }
 section#skill .wrap ul li::before{
   content: "";
@@ -48,10 +47,10 @@ section#skill .wrap ul li::before{
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 5px;
 }
 section#skill .wrap ul li:nth-child(1)::before{
   background-image: url(../img/html.png);
-   /*! margin-top: 10px; */
 }
 section#skill .wrap ul li:nth-child(2)::before{
   background-image: url(../img/css.png);
@@ -92,9 +91,19 @@ section#skill .wrap ul li:nth-child(13)::before{
 section#skill .wrap ul li:nth-child(14)::before{
   background-image: url(../img/vv.png);
 }
+section#skill .wrap ul li span{
+  background-color: #acacac;
+}
+section#skill .wrap ul li span::before{
+  content: "";
+  height: 12px;
+  display: block;
+  position: absolute;
+  left: 0;
+}
 section#skill .wrap ul li span.html{
   width: 70%;
-  background-color: #ff5722;
+  /*! background-color: #ff5722; */
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -104,8 +113,12 @@ section#skill .wrap ul li span.html{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.html::before{
+  width: 80%;
+  background-color: #ff5722;
+}
 section#skill .wrap ul li span.html::after{
-  content: "70%";  
+  content: "80%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -113,7 +126,6 @@ section#skill .wrap ul li span.html::after{
 }
 section#skill .wrap ul li span.css{
   width: 70%;
-  background-color: #359afe;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -123,8 +135,12 @@ section#skill .wrap ul li span.css{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.css::before{
+  width: 80%;
+  background-color: #359afe;
+}
 section#skill .wrap ul li span.css::after{
-  content: "70%";  
+  content: "80%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -132,7 +148,6 @@ section#skill .wrap ul li span.css::after{
 }
 section#skill .wrap ul li span.jq{
   width: 70%;
-  background-color: #d64443;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -142,8 +157,12 @@ section#skill .wrap ul li span.jq{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.jq::before{
+  width: 30%;
+  background-color: #d64443;
+}
 section#skill .wrap ul li span.jq::after{
-  content: "70%";  
+  content: "30%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -151,7 +170,7 @@ section#skill .wrap ul li span.jq::after{
 }
 section#skill .wrap ul li span.java{
   width: 70%;
-  background-color: #fed73b;
+  /*! background-color: #fed73b; */
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -161,8 +180,12 @@ section#skill .wrap ul li span.java{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.java::before{
+  width: 25%;
+  background-color: #fed73b;
+}
 section#skill .wrap ul li span.java::after{
-  content: "70%";  
+  content: "25%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -170,7 +193,7 @@ section#skill .wrap ul li span.java::after{
 }
 section#skill .wrap ul li span.sass{
   width: 70%;
-  background-color: #cb6598;
+  /*! background-color: #cb6598; */
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -180,8 +203,12 @@ section#skill .wrap ul li span.sass{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.sass::before{
+  width: 80%;
+  background-color: #cb6598;
+}
 section#skill .wrap ul li span.sass::after{
-  content: "70%";  
+  content: "80%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -189,7 +216,6 @@ section#skill .wrap ul li span.sass::after{
 }
 section#skill .wrap ul li span.web{
   width: 70%;
-  background-color: #1c4384;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -199,8 +225,12 @@ section#skill .wrap ul li span.web{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.web::before{
+  width: 90%;
+  background-color: #1c4384;
+}
 section#skill .wrap ul li span.web::after{
-  content: "70%";  
+  content: "90%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -208,7 +238,6 @@ section#skill .wrap ul li span.web::after{
 }
 section#skill .wrap ul li span.zen{
   width: 70%;
-  background-color: #7acd14;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -218,8 +247,12 @@ section#skill .wrap ul li span.zen{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.zen::before{
+  width: 80%;
+  background-color: #7acd14;
+}
 section#skill .wrap ul li span.zen::after{
-  content: "70%";  
+  content: "80%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -227,7 +260,6 @@ section#skill .wrap ul li span.zen::after{
 }
 section#skill .wrap ul li span.ps{
   width: 70%;
-  background-color: #001d35;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -237,8 +269,12 @@ section#skill .wrap ul li span.ps{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.ps::before{
+  width: 90%;
+  background-color: #001d35;
+}
 section#skill .wrap ul li span.ps::after{
-  content: "70%";  
+  content: "90%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -246,7 +282,7 @@ section#skill .wrap ul li span.ps::after{
 }
 section#skill .wrap ul li span.ai{
   width: 70%;
-  background-color: #300;
+  /*! background-color: #300; */
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -255,6 +291,10 @@ section#skill .wrap ul li span.ai{
   display: block;
   position: relative;
   z-index: 1;
+}
+section#skill .wrap ul li span.ai::before{
+  width: 90%;
+  background-color: #001d35;
 }
 section#skill .wrap ul li span.ai::after{
   content: "70%";  
@@ -265,7 +305,6 @@ section#skill .wrap ul li span.ai::after{
 }
 section#skill .wrap ul li span.id{
   width: 70%;
-  background-color: #72102f;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -275,8 +314,12 @@ section#skill .wrap ul li span.id{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.id::before{
+  width: 20%;
+  background-color: #72102f;
+}
 section#skill .wrap ul li span.id::after{
-  content: "70%";  
+  content: "20%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -284,7 +327,6 @@ section#skill .wrap ul li span.id::after{
 }
 section#skill .wrap ul li span.pr{
   width: 70%;
-  background-color: #00005a;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -294,8 +336,12 @@ section#skill .wrap ul li span.pr{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.pr::before{
+  width: 85%;
+  background-color: #00005a;
+}
 section#skill .wrap ul li span.pr::after{
-  content: "70%";  
+  content: "85%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -303,7 +349,6 @@ section#skill .wrap ul li span.pr::after{
 }
 section#skill .wrap ul li span.ae{
   width: 70%;
-  background-color: #00005a;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -313,8 +358,12 @@ section#skill .wrap ul li span.ae{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.ae::before{
+  width: 0%;
+  background-color: #00005a;
+}
 section#skill .wrap ul li span.ae::after{
-  content: "70%";  
+  content: "0%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -322,7 +371,6 @@ section#skill .wrap ul li span.ae::after{
 }
 section#skill .wrap ul li span.ko{
   width: 70%;
-  background-color: #3497d9;
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -333,15 +381,24 @@ section#skill .wrap ul li span.ko{
   z-index: 1;
 }
 section#skill .wrap ul li span.ko::after{
-  content: "70%";  
+  content: "85%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
+section#skill .wrap ul li span.ko::before{
+  content: "";
+  width: 85%;
+  height: 12px;
+  display: block;
+  background-color: #3497d9;
+  position: absolute;
+  left: 0;
+}
 section#skill .wrap ul li span.vs{
   width: 70%;
-  background-color: #027abb;
+  /*! background-color: #027abb; */
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
@@ -351,8 +408,12 @@ section#skill .wrap ul li span.vs{
   position: relative;
   z-index: 1;
 }
+section#skill .wrap ul li span.vs::before{
+  width: 90%;
+  background-color: #001d35;
+}
 section#skill .wrap ul li span.vs::after{
-  content: "70%";  
+  content: "90%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
