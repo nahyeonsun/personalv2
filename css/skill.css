@@ -12,12 +12,12 @@ section#skill .wrap{
 }
 section#skill .wrap h2{
   border-bottom: 3px solid;
-  color: #fff;
+  color: #403F39;
   margin-bottom: 30px;
 }
 section#skill .wrap h2:before{
   content: "# ";
-  color: #fff;
+  color: #403F39;
   font-size: 25px;
   margin-bottom: 10px; 
 }

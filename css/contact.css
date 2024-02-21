@@ -1,11 +1,11 @@
 section#contact{
-  height: 100vh;
-  box-sizing: border-box;
+  height: calc(100vh - 44.8px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
-  border-radius: 140px 140px 0 0;
+  background-color: #89847c08;
+  box-sizing: border-box;
 }
 section#contact .wrap{
    display: flex;
@@ -26,7 +26,6 @@ section#contact .box1 h2{
    text-transform: uppercase;
    margin-top: 50px;
    transform: translatey(50%);
-   color: #89847c;
 }  
 section#contact .box1 h3{
 

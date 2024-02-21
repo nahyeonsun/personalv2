@@ -48,7 +48,7 @@ div#title h2{
    width: fit-content;
    animation-delay: 0.5s;
    transform: rotateY(-180deg);
-   color: #959087;
+   color: #403F39;
 }
 @keyframes fliph2{
   0%{
@@ -60,7 +60,7 @@ div#title h2{
 }
 div#title h2 span{   
    font-size: 100px;
-   color: #959087;
+   color: #403F39;
 }
 div#title .down {
    

@@ -11,11 +11,10 @@ section#about .wrap{
 }
 section#about .wrap h2{
  border-bottom: 3px solid;
- color: #a09d96;
 }
 section#about .wrap h2:before{
    content: "# ";
-   color: #a09d96;
+   color: #403F39;
    font-size: 25px;
    height: 3px;
    width: 60px;
@@ -25,20 +24,26 @@ section#about .profile{
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
+  column-gap: 20px;
 }
 section#about .profile .left{
   grid-column: 1;
   grid-row: 1 / span 2;
+  /*! position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 section#about .profile .left img{ 
   width: 400px;
   border-radius: 10%;
-  transform: translate(30px, 30px);
+  margin-top: 20px;
 }
 section#about .profile .left ul{  
   display: flex;
   gap: 20px;
-  transform: translate(90px, 40px);
+  padding-top: 20px;
 }
 section#about .profile .left ul li{
 
@@ -63,7 +68,7 @@ section#about .profile .ab{
 }
 section#about .profile .ab h3{  
   margin: 50px 0 10px 0;
-  color: #a09d96;
+  color: #403f39;
   font-weight: bold;
 }
 section#about .profile .ab ul{
@@ -79,10 +84,12 @@ section#about .profile .ej{
   grid-column: 2;
   grid-row: 2;
 }
-section#about .profile .ej h3{  
-  margin: 50px 0 10px 0;
-  color: #a09d96;
-  font-weight: bold;
+section#about .profile .ej h3{
+ font-weight: bold;
+  margin-bottom: 10px;
+}
+section#about .profile .ej h3:nth-child(3){  
+  margin-top: 50px;
 }
 section#about .profile .ej ul{  
   color: #4d473c;
@@ -97,7 +104,6 @@ section#about .profile .cre{
   grid-row: 1 / span2;
 }
 section#about .profile .cre h3{  
-  color: #a09d96;
   margin: 50px 0 10px 0;
   font-weight: bold;
 }
