@@ -33,6 +33,9 @@
                     $("body").css("padding-top",headerH);
                 }
             });
+            if($(window).scrollTop()>$("section#about").offset().top-$(window).height()){ 
+                        $("footer a.top").removeClass("topFix").css("opacity",1);
+                    }
         });
     </script>
      <!-- slick -->
@@ -84,7 +87,7 @@
                 <h2 class="h2">profile</h2>
                 <div class="profile">
                     <div class="left">
-                        <img src="img/my2.jpg" alt="">
+                        <img src="img/my.jpg" alt="">
                         <ul>
                             <li><a href="">이력서</a></li>
                             <li><a href="">깃허브</a></li>
@@ -275,7 +278,7 @@
                             <span class="mail">mail</span>hyeonsun1223@gmail.com
                         </a>
                     </p>
-                    <p>3
+                    <p>
                         <a href="">
                             <span class="call">call</span>010-2756-2972
                         </a>
