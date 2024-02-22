@@ -62,6 +62,10 @@ section#about .profile .left ul li a{
   font-weight: 500;
   border: 1px solid #403f39;
 }
+section#about .profile .left ul li a:hover{ 
+  background-color: #403f39;
+  color: white;
+}
 section#about .profile .ab{
   grid-column: 2;
   grid-row: 1;

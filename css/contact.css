@@ -44,7 +44,6 @@ section#contact .box2 p{
    font-size: 20px;
    margin-right: 25px;
    transform: translateY(100px);
-   color: #54514e;
 }
 section#contact .box2 p .mail{
    background-image: url(../img/mail.svg);
@@ -55,7 +54,7 @@ section#contact .box2 p .mail{
    height: 25px;
    position: relative;
    z-index: 1;
-   left: 42%;
+   left: 37%;
    top: 25px;
    font-size: 0;
 }
@@ -67,20 +66,14 @@ section#contact .box2 p .call{
    height: 25px;
    position: relative;
    z-index: 1;
-   left: 65%;
-   top: 25px;
+   left: 63%;
+   top: 27px;
    font-size: 0;
 }
-section#contact .box2 p .sns{
-   background-image: url(../img/insta.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   display: block;
-   width: 25px;
-   height: 25px;
-   position: relative;
-   z-index: 1;
-   left: 72%;
-   top: 25px;
-   font-size: 0;
+section#contact .box2 p a{
+   color: #54514e;
+}
+section#contact .box2 p a:hover{
+   color: blue;
+   text-decoration: underline;
 }

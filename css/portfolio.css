@@ -89,7 +89,10 @@ section#portfolio .wrap ul.list li>ul a{
   margin-right: 10px;
   color: #333;
 }
-
+section#portfolio .wrap ul.list li>ul a:hover{
+  background-color: #403f39;
+  color: white;
+}
 /* 슬릭 */
 section#portfolio .slick-slider .slick-track, .slick-slider .slick-list{
   order: 3;
