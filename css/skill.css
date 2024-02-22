@@ -136,11 +136,11 @@ section#skill .wrap ul li span.css{
   z-index: 1;
 }
 section#skill .wrap ul li span.css::before{
-  width: 80%;
+  width: 75%;
   background-color: #359afe;
 }
 section#skill .wrap ul li span.css::after{
-  content: "80%";  
+  content: "75%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;

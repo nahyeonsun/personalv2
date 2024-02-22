@@ -4,7 +4,7 @@ section#contact{
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
-  background-color: #89847c08;
+  background-color: #89807c17;
   box-sizing: border-box;
 }
 section#contact .wrap{
@@ -15,7 +15,7 @@ section#contact .wrap{
 section#contact .box1{  
    width: 700px;
    margin-right: 20px;
-   background-color: #dedfd9;
+   background-color: #d2d1cc;
    text-align: center;
    height: 300px;
    border-radius: 50px 0 50px 0;
@@ -35,7 +35,7 @@ section#contact .box1 h3{
 }
 section#contact .box2{   
    width: 500px;
-   background-color: #ecede8;
+   background-color: #e3e5dc;
    text-align: end;
    height: 300px;
    border-radius: 50px 0 50px 0;

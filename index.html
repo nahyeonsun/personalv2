@@ -26,7 +26,12 @@
         $(document).ready(function(){
             $("footer a.top").click(function(){
                 // 탑버튼을 클릭하면 상단으로 감
-                $("html,body").animate({scrollTop:0},1000); //문서스크롤 애니
+                $("html,body").animate({scrollTop:0},1000);
+            });
+            $(window).scroll(function(){
+                if($(window).scrollTop()>$().height()){
+                    $("body").css("padding-top",headerH);
+                }
             });
         });
     </script>
@@ -68,81 +73,81 @@
                 HYEONSUN
                 <span class="block h1">PORTFOLIO</span></h2>
         </div>
-        <div class="down">
-            <p><a>down</a></p>
+        <div class="scroll">
+            <a href="">down</a>
         </div>
     </div>
     <!-- 메인영역 -->
     <main>
         <section id="about" class="paddingT50 paddingB50 borderR30  marginT50">
             <div class="wrap">
-                <h2 class="h2">PROFILE</h2>
-            <div class="profile">
-                <div class="left">
-                    <img src="img/my2.jpg" alt="">
-                    <ul>
-                        <li><a href="">이력서</a></li>
-                        <li><a href="">깃허브</a></li>
-                    </ul>
-                </div>
-                <div class="ab">
-                    <h3 class="h3">ABOUT ME</h3>
-                    <ul>
-                        <li>나현선<li>
-                        <li>1998.12.23</li>
-                        <li>010-2756-2972</li>
-                        <li>hyeonsun1223@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="ej">
-                    <h3 class="h3">EDUCATION & JOP EXPERIENC</h3>
-                    <ul>
-                        <li>2023.11 ~ 2024.03 이젠 모란 웹디자인 & 퍼블리셔과정 수료</li>
-                        <li>2016.07 ~ 2023.08 아름방송 네트워크 근무</li>
-                        <li>2014.03 ~ 2017.02 성남테크노과학고등학교 졸업<li>
-                    </ul>
-                </div>
-                <div class="cre">
-                    <h3 class="h3">CERTIFICATE</h3>
-                    <ul>
-                        <li>2022.01 2종 보통 운전면허</li>
-                        <li>2016.07 컴퓨터그래픽스운용기능사</li>
-                        <li>2016.01 GTQ 일러스트 3급</li>
-                        <li>2014.10 디지털 정보활용능력 고급</li>
-                        <li>2015.10 GTQ 포토샵 1급</li>
-                        <li>2015.09 컴퓨터활용능력 2급</li>
-                        <li>2014.07 GTQ 포토샵 2급</li>
-                        <li>2014.04 ITQ 한셀</li>
-                        <li>2013.10 ITQ 한쇼</li>
-                        <li>2013.10 ITQ 아래한글<li></li>
-                    </ul>
-                </div>
+                <h2 class="h2">profile</h2>
+                <div class="profile">
+                    <div class="left">
+                        <img src="img/my2.jpg" alt="">
+                        <ul>
+                            <li><a href="">이력서</a></li>
+                            <li><a href="">깃허브</a></li>
+                        </ul>
+                    </div>
+                    <div class="ab">
+                        <h3 class="h3">ABOUT ME</h3>
+                        <ul>
+                            <li>나현선<li>
+                            <li>1998.12.23</li>
+                            <li>010-2756-2972</li>
+                            <li>hyeonsun1223@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="ej">
+                        <h3 class="h3">EDUCATION & JOP EXPERIENC</h3>
+                        <ul>
+                            <li>2023.11 ~ 2024.03 이젠 모란 웹디자인 & 퍼블리셔과정 수료</li>
+                            <li>2016.07 ~ 2023.08 아름방송 네트워크 근무</li>
+                            <li>2014.03 ~ 2017.02 성남테크노과학고등학교 졸업<li>
+                        </ul>
+                    </div>
+                    <div class="cre">
+                        <h3 class="h3">CERTIFICATE</h3>
+                        <ul>
+                            <li>2022.01 2종 보통 운전면허</li>
+                            <li>2016.07 컴퓨터그래픽스운용기능사</li>
+                            <li>2016.01 GTQ 일러스트 3급</li>
+                            <li>2014.10 디지털 정보활용능력 고급</li>
+                            <li>2015.10 GTQ 포토샵 1급</li>
+                            <li>2015.09 컴퓨터활용능력 2급</li>
+                            <li>2014.07 GTQ 포토샵 2급</li>
+                            <li>2014.04 ITQ 한셀</li>
+                            <li>2013.10 ITQ 한쇼</li>
+                            <li>2013.10 ITQ 아래한글<li></li>
+                        </ul>
+                    </div>
             </div>
-    </section>
+        </section>
     <!-- 스킬영역 -->
-    <section id="skill" class="paddingT50 paddingB50 borderR30  marginT50">
-        <div class="wrap">
-            <h2 class="h2">skill</h2>
-            <ul class="list flex between">
-                <li>HTML5 <span class="html"> 70%</span></li>
-                <li>CSS3 <span class="css"> 70%</span></li>
-                <li>jQuery <span class="jq"> 70%</span></li>
-                <li>Javascript <span class="java"> 70%</span></li>
-                <li>Sass <span class="sass"> 70%</span></li>
-                <li>웹접근성 <span class="web"> 70%</span></li>
-                <li>젠코딩 <span class="zen"> 70%</span></li>
-                <li>포토샵 <span class="ps"> 70%</span></li>
-                <li>일러스트 <span class="ai"> 70%</span></li>
-                <li>인디자인 <span class="id"> 70%</span></li>
-                <li>프리미어프로 <span class="pr"> 70%</span></li>
-                <li>에프터이펙트 <span class="ae"> 70%</span></li>
-                <li>카카오오븐 <span class="ko"> 70%</span></li>
-                <li>비주얼스튜디오 <span class="vs"> 70%</span></li>
-            </ul>
-        </div>
+        <section id="skill" class="paddingT50 paddingB50 borderR30  marginT50">
+            <div class="wrap">
+                <h2 class="h2">skill</h2>
+                <ul class="list flex between">
+                    <li>HTML5 <span class="html"> 70%</span></li>
+                    <li>CSS3 <span class="css"> 70%</span></li>
+                    <li>jQuery <span class="jq"> 70%</span></li>
+                    <li>Javascript <span class="java"> 70%</span></li>
+                    <li>Sass <span class="sass"> 70%</span></li>
+                    <li>웹접근성 <span class="web"> 70%</span></li>
+                    <li>젠코딩 <span class="zen"> 70%</span></li>
+                    <li>포토샵 <span class="ps"> 70%</span></li>
+                    <li>일러스트 <span class="ai"> 70%</span></li>
+                    <li>인디자인 <span class="id"> 70%</span></li>
+                    <li>프리미어프로 <span class="pr"> 70%</span></li>
+                    <li>에프터이펙트 <span class="ae"> 70%</span></li>
+                    <li>카카오오븐 <span class="ko"> 70%</span></li>
+                    <li>비주얼스튜디오 <span class="vs"> 70%</span></li>
+                </ul>
+            </div>
         </section>
         <!-- 포트폴리오영역 -->
-        <section id="portfolio" class="paddingT50 paddingB50 borderR30  marginT50">
+        <section id="portfolio" class="paddingT50 paddingB50 borderR30 marginT50">
             <div class="wrap">
                 <h2 class="h2">portfolio</h2>
                 <ul class="list flex pfSlide">
@@ -177,7 +182,7 @@
                             <li>포트폴리오용 카피사이트 제작</li>
                             <li>사용툴 : HTML5, CSS3, jQuery</li>
                             <li>참여도 : 100%</li>
-                            <li>페이지 : MAIN,SUB</li>
+                            <li>페이지 : MAIN</li>
                             <a href="">사이트 보러가기</a>
                             <a href="">깃허브 보러가기</a>
                         </ul>
@@ -189,7 +194,7 @@
                             <li>포트폴리오용 카피사이트 제작</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, Javascript</li>
                             <li>참여도 : 100%</li>
-                            <li>페이지 : MAIN</li>
+                            <li>페이지 : MAIN, SUB</li>
                             <a href="">사이트 보러가기</a>
                             <a href="">깃허브 보러가기</a>
                         </ul>
@@ -249,7 +254,7 @@
                                 <li>포트폴리오용 카피사이트 제작</li>
                                 <li>사용툴 : HTML5, CSS3, jQuery</li>
                                 <li>참여도 : 100%</li>
-                                <li>페이지 : MAIN</li><li>페이지 : MAIN</li>
+                                <li>페이지 : MAIN</li>
                                 <a href="">사이트 보러가기</a>
                                 <a href="">깃허브 보러가기</a>
                             </ul>
@@ -271,7 +276,6 @@
             </div>
         </section>
     </main>
-        </div>
     <!-- 하단영역 -->
     <footer>
         <section id="footer">

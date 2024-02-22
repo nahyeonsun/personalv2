@@ -47,7 +47,7 @@ section#about .profile .left ul{
 }
 section#about .profile .left ul li{
 
-  background-color: #a09b91;
+  /*! background-color: #a09b91; */
   color: white;
 }
 section#about .profile .left ul li a{ 
@@ -57,10 +57,10 @@ section#about .profile .left ul li a{
   border-radius: 19px;
   display: block;
   line-height: 40px;
-  /*! cursor: pointer; */
   text-align: center;
-  color: white;
-  font-weight: 600;
+  color: #333;
+  font-weight: 500;
+  border: 1px solid #403f39;
 }
 section#about .profile .ab{
   grid-column: 2;
@@ -112,7 +112,7 @@ section#about .profile .cre ul{
   font-size: 16px;
 }
 section#about .profile .cre ul li{
-  line-height: 1.8;
+  line-height: 2;
   font-size: 20px;
 }
 

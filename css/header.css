@@ -10,24 +10,6 @@ header .wrap{
    grid-template-columns: 1fr auto;
    align-items: center;
    height: 87px;
-   animation-name: headerS;
-   animation-duration: 0.5s;
-   animation-direction: reverse;
-   animation-timing-function: ease-in;
-   animation-delay: 1s;
-   opacity: 0;
-   animation-fill-mode: forwards;
-}
-@keyframes headerS{
-  0%{
-   opacity: 1;
-   transform: translatey(0%);
-  }
-  100%{
-   opacity: 0;   
-   transform: translatey(-100%);
-  }
-}
 }
 header h1{
   

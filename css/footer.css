@@ -1,5 +1,6 @@
 footer{  
   background-color: #89847c;
+  position: relative;
 }
 section#footer{
   color: #d3cec4;
@@ -15,7 +16,7 @@ footer a.top{
   height: 67px;
   display: block;
   color: #54514e;
-  position: fixed;
+  position: absolute;
   bottom: 60px;
   right: 75px;
   z-index: 1;
