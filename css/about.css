@@ -5,6 +5,7 @@ section#about{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #89807c17;
 }
 section#about .wrap{
   
