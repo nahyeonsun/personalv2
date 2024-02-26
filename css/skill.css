@@ -14,6 +14,20 @@ section#skill .wrap h2{
   border-bottom: 3px solid;
   color: #403F39;
   margin-bottom: 30px;
+  animation-name: h2Up;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-direction:  reverse;
+}
+@keyframes h2Up{
+  0%{
+   transform: translateY(0); 
+   opacity: 1;
+  }
+  100%{
+   transform: translateY(20px); 
+   opacity: 0; 
+  }
 }
 section#skill .wrap h2:before{
   content: "# ";
