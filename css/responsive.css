@@ -1,0 +1,82 @@
+@media screen and (max-width:768px){
+  .wrap{
+    padding: 0 20px;
+    width: 100% !important;
+  }
+  .h2{
+    
+  font-size: calc(70px * 0.8);
+  text-align: center;
+    }
+  .h3{
+    font-size: calc(40px * 0.7);
+   }
+  /* 상단영역   */
+  header .wrap{   
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 a{   
+    width: calc(74px * 0.7);
+    height: calc(64px * 0.7);
+  }
+  header h1{    
+    padding: 15px 0;
+  }
+  header ul li a{   
+    font-size: calc(23px * 0.65);
+    padding: 0px 7px;
+  }
+  header ul li a:hover{
+    transform: scale(1);
+  }
+  /*  타이틀 영역  */
+  div#title div.wrap{ 
+    width: 100%;
+  }
+  div#title h2{    
+    font-size: calc(150px * 0.38);
+  }
+  div#title h2 span{
+  font-size: calc(100px * 0.44);
+  }
+  div#title .scroll a{    
+    background-image: url(../img/swipe_up.svg);
+    width: 50px;
+    height: 50px;
+    border: transparent;
+  }
+  div#title .scroll a::before{
+    display: none;
+  }
+  /*  about  */
+  section#about{    
+    height: fit-content;
+  }
+  section#about .profile{ 
+    display: flex;
+    flex-direction: column;
+  }
+  section#about .profile .left img{
+    width: calc(400px * 0.7);
+  }
+  section#about .profile .left ul li a{  
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: calc(18px * 0.8);
+  }
+  section#about .profile .ab ul li{
+    font-size: calc(20px * 0.8);
+  }
+  section#about .profile .ej h3{
+    
+  margin: 50px 0 10px 0;
+  }
+  section#about .profile .ej ul li{
+    font-size: calc(20px * 0.8);
+  }
+  section#about .profile .cre ul li{
+    font-size: calc(20px * 0.8);
+  }
+}
