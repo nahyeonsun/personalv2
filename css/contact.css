@@ -40,11 +40,13 @@ section#contact .box2{
    text-align: end;
    height: 300px;
    border-radius: 50px 0 50px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 section#contact .box2 p{
    font-size: 20px;
    margin-right: 25px;
-   transform: translateY(100px);
 }
 section#contact .box2 p .mail{
    background-image: url(../img/mail.svg);

@@ -9,7 +9,7 @@ header .wrap{
    display: grid;
    grid-template-columns: 1fr auto;
    align-items: center;
-   height: 87px;
+   height: 100%;
 }
 header h1{
   
