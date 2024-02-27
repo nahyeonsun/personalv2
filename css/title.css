@@ -37,7 +37,7 @@ div#title div.wrap{ /* 하위선택자 */
   }
 }
 div#title h2{ 
-   font-size: 150px;
+   font-size: 140px;
    line-height: 1.5;
    animation-name: fliph2;
    animation-duration: 0.5s;
@@ -58,7 +58,7 @@ div#title h2{
   }
 }
 div#title h2 span{   
-   font-size: 100px;
+   font-size: 80px;
    color: #403F39;
 }
 div#title .scroll {
