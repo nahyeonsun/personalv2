@@ -118,6 +118,10 @@ section#about .profile .ej ul li{
   line-height: 1.8;
   font-size: 20px;
 }
+section#about .profile .ej ul li span{
+  
+  display: initial;
+}
 section#about .profile .cre{
   grid-column: 3;
   grid-row: 1 / span2;

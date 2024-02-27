@@ -92,9 +92,6 @@
   section#skill{
     height: fit-content;
   }
-  section#skill .wrap ul{  
-    
-  }
   section#skill .wrap ul li{
     width: 100%;
     font-size: calc(18px * 0.7);
