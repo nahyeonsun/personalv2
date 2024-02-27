@@ -4,9 +4,8 @@
     width: 100% !important;
   }
   .h2{
-    
-  font-size: calc(70px * 0.7);
-  text-align: center;
+    font-size: calc(70px * 0.7);
+    text-align: center;
     }
   .h3{
     font-size: calc(40px * 0.6);
@@ -31,9 +30,8 @@
     height: calc(64px * 0.6);
   }
   header ul{
-    
-  height: fit-content;
-  padding-top: 10px;
+    height: fit-content;
+    padding-top: 10px;
   }
   header ul li a{   
     font-size: calc(23px * 0.6);
@@ -50,7 +48,7 @@
     font-size: calc(150px * 0.38);
   }
   div#title h2 span{
-  font-size: calc(100px * 0.44);
+    font-size: calc(100px * 0.44);
   }
   div#title .scroll a{    
     background-image: url(../img/swipe_up.svg);
@@ -109,12 +107,99 @@
     width: 50% !important;
     height: 8px !important;
     margin-left: 10px !important;
+    background-color: transparent;
   }
   section#skill .wrap ul li span::before{    
     height: 8px !important;
+  }
+  section#skill .wrap ul li span.html::before{
+    width: calc(80% * 0.8);
+  }
+  section#skill .wrap ul li span.css::before{
+    width: calc(75% * 0.8);
+  }
+  section#skill .wrap ul li span.jq::before{
+    width: calc(30% * 0.8);
   } 
+  section#skill .wrap ul li span.java::before{
+    width: calc(25% * 0.8);
+  }
+  section#skill .wrap ul li span.sass::before{ 
+    width: calc(80% * 0.8);
+  }
+  section#skill .wrap ul li span.web::before{
+    width: calc(90% * 0.8);
+  }
+  section#skill .wrap ul li span.zen::before{
+    width: calc(80% * 0.8);
+  }
+  section#skill .wrap ul li span.ps::before{
+    width: calc(90% * 0.8);
+  }
+  section#skill .wrap ul li span.ai::before{
+    width: calc(70% * 0.8);
+  }
+  section#skill .wrap ul li span.id::before{
+    width: calc(20% * 0.8);
+  }
+  section#skill .wrap ul li span.pr::before{
+    width: calc(85% * 0.8);
+  }
+  section#skill .wrap ul li span.ae::before{
+
+  }
+  section#skill .wrap ul li span.ko::before{
+    width: calc(85% * 0.8);
+  }
+  section#skill .wrap ul li span.vs::before{
+    width: calc(90% * 0.8);
+  }
   section#skill .wrap ul li span::after{
     font-size: calc(17px * 0.7) !important;
+    position: absolute;
+    transform: translateY(-2px) !important;
+  }
+  section#skill .wrap ul li span.html::after{
+    right: 19%;
+  }
+  section#skill .wrap ul li span.css::after{
+    left: 60%;
+  }
+  section#skill .wrap ul li span.jq::after{
+    left: 25%;
+  } 
+  section#skill .wrap ul li span.java::after{
+    left: 21%;
+  }
+  section#skill .wrap ul li span.sass::after{ 
+    right: 19%;
+  }
+  section#skill .wrap ul li span.web::after{
+    right: 10%;
+  }
+  section#skill .wrap ul li span.zen::after{
+    right: 19%;
+  }
+  section#skill .wrap ul li span.ps::after{
+    right: 12%;
+  }
+  section#skill .wrap ul li span.ai::after{
+    right: 26%;
+  }
+  section#skill .wrap ul li span.id::after{
+    left: 17%;
+  }
+  section#skill .wrap ul li span.pr::after{
+    right: 14%;
+  }
+  section#skill .wrap ul li span.ae::after{
+    left: 0;
+  }
+  section#skill .wrap ul li span.ko::after{
+    right: 14%;
+  }
+  section#skill .wrap ul li span.vs::after{
+    right: 12%;
   }
   /*  portfolio  */
   section#portfolio{
