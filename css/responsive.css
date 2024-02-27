@@ -130,9 +130,12 @@
   section#portfolio .wrap ul.list li > ul{
     
   grid-row: 2;
+  text-align: center;
   }
   section#portfolio .wrap ul.list li > ul li.h3{    
     font-size: calc(45px * 0.6);
+    width: fit-content;
+    align-self: center;
   }
   section#portfolio .wrap ul.list li > ul li{
     font-size: calc(23px * 0.7);
@@ -143,17 +146,20 @@
     font-size: calc(15px * 0.8);
     line-height: 30px;
   }
+  section#portfolio .slick-dots{
+    margin: 0 auto;
+  }
   section#portfolio .slick-dots li button::before{   
     font-size: calc(18px * 0.8);
     content: "●" !important;
   }
   .slick-prev{
     left: 4px !important;
-    top: 60% !important;
+    top: 72% !important;
   }
   .slick-next{
     right: 4px !important;
-    top: 60% !important;
+    top: 72% !important;
   }
   section#contact .wrap{
     flex-direction: column;
