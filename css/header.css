@@ -35,7 +35,7 @@ header ul li a{
    color: #403F39;
    text-transform: uppercase;
    font-family: 'Noto Serif Balinese', serif;
-   padding: 6px 25px;
+   padding: 0 20px;
    height: 100%;
    display: block;
    box-sizing: border-box;
@@ -43,12 +43,13 @@ header ul li a{
    align-items: center;
    font-size: 23px;   
    transition: 0.5s;
+   letter-spacing: -1px;
 }
 header ul li a:hover{
    opacity: 0.5;
-   transform: scale(1.2);
 }
-.current{
+.currentgnb{
    text-decoration: underline;
-   color: yellowgreen;
+   color: blue;
+   transform: scale(1.2);
 }

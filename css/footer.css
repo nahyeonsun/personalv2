@@ -14,7 +14,6 @@ section#footer .wrap p{
 footer a.top{
   width: 51px;
   height: 67px;
-  display: block;
   color: #54514e;
   position: absolute;
   bottom: 60px;
@@ -26,6 +25,7 @@ footer a.top{
   flex-direction: column;
   text-transform: uppercase;
   font-size: 16px;
+  display: none;
 }
 footer a.top::before{
   content: "";
@@ -33,7 +33,12 @@ footer a.top::before{
   width: 24px;
   height: 24px;
   transition: all 1s;
+  display: block;
 }
 footer a.top:hover::before{  
   transform: translateY(-7px);
+}
+.show{
+  display: flex !important;
+  position: fixed;
 }
