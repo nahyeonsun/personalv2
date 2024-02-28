@@ -50,6 +50,6 @@ header ul li a:hover{
 }
 .currentgnb{
    text-decoration: underline;
-   color: blue;
+   color: #3871ba;
    transform: scale(1.2);
 }
