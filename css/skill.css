@@ -83,7 +83,7 @@ section#skill .wrap ul li:nth-child(11)::before{
   background-image: url(../img/pr.png);
 }
 section#skill .wrap ul li:nth-child(12)::before{
-  background-image: url(../img/ae.png);
+  background-image: url(../img/vue.png);
 }
 section#skill .wrap ul li:nth-child(13)::before{
   background-image: url(../img/ov.png);
@@ -359,11 +359,11 @@ section#skill .wrap ul li span.ae{
   z-index: 1;
 }
 section#skill .wrap ul li span.ae::before{
-  width: 0%;
-  background-color: #00005a;
+  width: 10%;
+  background-color: #4fbb88;
 }
 section#skill .wrap ul li span.ae::after{
-  content: "0%";  
+  content: "10%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;

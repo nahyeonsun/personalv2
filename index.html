@@ -46,11 +46,11 @@
         // 대메뉴 클릭 시 페이지 스크롤 이동
         // home
             $("header ul li:nth-child(1) a").click(
-                    function(){
-                      $("html,body").animate({scrollTop:"0px"},800); 
-                      return false; 
-                    }
-                );
+                function(){
+                    $("html,body").animate({scrollTop:"0px"},800); 
+                    return false; 
+                }
+            );
         // about
             $("header ul li:nth-child(2) a").click(
                 function(){
@@ -109,11 +109,10 @@
                     $("header ul li a").not("header ul li:nth-child(4) a").removeClass("currentgnb");
                 }
             // 콘택트 영역에서 해당 메뉴 색상 변경
-                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$           ("#portfolio").height()+$("#contact").height()){
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#portfolio").height()+$("#contact").height()){
                     $("header ul li:nth-child(5) a").addClass("currentgnb"); 
                     $("header ul li a").not("header ul li:nth-child(5) a").removeClass("currentgnb");
                 }
-
             });
         });
     </script>
@@ -237,9 +236,7 @@
                     <li>일러스트 <span class="ai"> 70%</span></li>
                     <li>인디자인 <span class="id"> 70%</span></li>
                     <li>프리미어프로 <span class="pr"> 70%</span></li>
-                    <li>에프터이펙트 <span class="ae"> 70%</span></li>
-                    <li>카카오오븐 <span class="ko"> 70%</span></li>
-                    <li>비주얼스튜디오 <span class="vs"> 70%</span></li>
+                    <li>vue <span class="ae"> 30%</span></li>
                 </ul>
             </div>
         </section>
@@ -386,12 +383,12 @@
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" class="box2">
                     <p>
-                        <a href="">
+                        <a href="mailto:hyeonsun1223@gmail.com">
                             <span class="mail">mail</span>hyeonsun1223@gmail.com
                         </a>
                     </p>
                     <p>
-                        <a href="">
+                        <a href="tel:010-2756-2972">
                             <span class="call">call</span>010-2756-2972
                         </a>
                     </p>
