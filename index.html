@@ -130,7 +130,21 @@
                 autoplaySpeed: 2000,
                 speed:1000,
                 arrow:true,
-                dots:true
+                dots:true,
+                responsive:[
+                    {
+                    breakpoint: 769,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 2000,
+                        speed:1000,
+                        arrow:false,
+                        dots:true
+                    }
+                    }
+                ]
             });
          });
     </script>
@@ -176,14 +190,14 @@
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">profile</h2>
                 <div class="profile">
-                    <div data-aos="fade-right" data-aos-duration="1000" class="left">
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="left">
                         <img src="img/my.jpg" alt="">
                         <ul>
                             <li><a href="">이력서</a></li>
                             <li><a href="">깃허브</a></li>
                         </ul>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000" class="right">
+                    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="right">
                         <div class="ab">
                             <h3 class="h3">ABOUT ME</h3>
                             <ul>
@@ -236,7 +250,7 @@
                     <li>일러스트 <span class="ai"> 70%</span></li>
                     <li>인디자인 <span class="id"> 70%</span></li>
                     <li>프리미어프로 <span class="pr"> 70%</span></li>
-                    <li>vue <span class="ae"> 30%</span></li>
+                    <li>vue <span class="vue"> 30%</span></li>
                 </ul>
             </div>
         </section>
@@ -246,7 +260,7 @@
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">portfolio</h2>
                 <ul class="list flex pfSlide">
                     <li class="accu">
-                        <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" src="img/pf1.png" alt="ACCUNIQ">
+                        <img data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" src="img/pf1.png" alt="ACCUNIQ">
                         <ul data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                             <li class="h3">ACCUNIQ</li>
                             <li>포트폴리오용 카피사이트 제작</li>
