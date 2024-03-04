@@ -86,6 +86,9 @@
   section#about .profile .right li{
     font-size: calc(20px * 0.8) !important;
   }
+  section#about .profile .right .ej ul li span{
+    display: block;
+  }
   section#about .profile .right .ab h3{  
     margin: 30px 0 10px;
   }
