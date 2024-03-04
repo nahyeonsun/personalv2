@@ -260,12 +260,12 @@
     font-size: 14px;
   }
   section#contact .box2 p .mail{ 
-    left: 20%;
-    top: 23px;
+    left: 28%;
+    top: 27px;
   }
   section#contact .box2 p .call{
-    left: 51%;
-    top: 24px;
+    left: 55%;
+    top: 28px;
   }
   /*  footer  */
   section#footer .wrap p{  
