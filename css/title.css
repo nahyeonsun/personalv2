@@ -14,7 +14,7 @@ div#title div.wrap{
   
 } 
 div#title h2{ 
-   font-size: 140px;
+   font-size: 130px;
    line-height: 1.5;
    color: #403F39;
    font-family: "Playfair Display", serif;
@@ -22,7 +22,7 @@ div#title h2{
 }
 
 div#title h2 span.block{   
-   font-size: 80px;
+   font-size: 70px;
    color: #403F39;
 }
 div#title .mouse{ 

@@ -5,7 +5,7 @@ section#about{
   min-height: 700px;
   display: flex;
   flex-direction: column;
-  background-color: #89807c17;
+  background-color: #7d717514;
 }
 section#about .wrap{
  
@@ -550,7 +550,7 @@ section#portfolio .slick-prev{
   
 }
 section#portfolio .slick-track{
-  margin-top: 25px;
+  margin-top: 40px;
 }
 section#portfolio .wrap ul.list li{
   display: grid;
