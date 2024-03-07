@@ -4,17 +4,32 @@ section#about{
   min-height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*! justify-content: center; */
   background-color: #89807c17;
 }
 section#about .wrap{
 
 }
 section#about .wrap h2{
- border-bottom: 3px solid;
+  
+ /*! border-bottom: 3px solid; */
+  display: flex;
+  justify-content: space-between
+}
+section .wrap h2::after{
+  content: "";
+  border-bottom: 3px solid;
+  display: inline-block;
+  width: 75%;
+  opacity: 0.2;
+  transform: translateY(-60px);
+}
+section h2{
+  
+  color: goldenrod !important;
 }
 section#about .wrap h2:before{
-   content: "# ";
+   /*! content: "# "; */
    color: #403F39;
    font-size: 25px;
    height: 3px;
@@ -48,14 +63,15 @@ section#about .profile .left ul li{
 section#about .profile .left ul li a{ 
   width: 120px;
   height: 40px;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 19px;
   display: block;
   line-height: 40px;
   text-align: center;
   color: #333;
   font-weight: 500;
-  border: 1px solid #403f39;
+  /*! border: 1px solid #403f39; */
+  background-color: #e6e6e6;
 }
 section#about .profile .left ul li a:hover{ 
   background-color: #403f39;
@@ -79,6 +95,7 @@ section#about .profile .right .ab h3{
 section#about .profile .right .ab ul{
   color: #4d473c;
   font-size: 16px;
+  opacity: 0.7;
 }
 section#about .profile .right .ab ul li{
   line-height: 1.8;

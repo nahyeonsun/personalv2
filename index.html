@@ -26,10 +26,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skill.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -92,13 +89,18 @@
             // 타이틀 부분에선 메뉴 색상 변경을 하지 않는다.
                 if($(window).scrollTop()<$("#title").height()){ 
                     $("header ul li a").removeClass("currentgnb");
-                    // 타이틀 부분에서 탑버튼 숨기기
-                    $("footer a.top").fadeOut();
+
                 }
             // 어바웃 영역에서 해당 메뉴 색상 변경
                 if($(window).scrollTop()>=$("#about").height()){ 
                     $("header ul li:nth-child(2) a").addClass("currentgnb"); 
                     $("header ul li a").not("header ul li:nth-child(2) a").removeClass("currentgnb");
+                    $("header ul").addClass("small");
+                    // 타이틀 부분에서 탑버튼 숨기기
+                    $("footer a.top").fadeOut();
+                }
+                if($(window).scrollTop()<$("#about").height()){ 
+                    $("header ul").removeClass("small");
                 }
             // 스킬 영역에서 해당 메뉴 색상 변경
                 if($(window).scrollTop()>=$("#title").height()+$("#about").height()){
@@ -317,8 +319,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/accuniq/">사이트 보러가기</a>
+                                <a href="">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/accuniq/">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -331,8 +333,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/lpoint/">사이트 보러가기</a>
+                                <a href="">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/lpoint/">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -345,8 +347,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/hbpaper/">사이트 보러가기</a>
+                                <a href="">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/hbpaper/">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -359,8 +361,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN, SUB</li>
                             <li class="view flex">
-                                <a href="https://nahyeonsun.github.io/pf4-Hitejinro/index.html">깃허브 보러가기</a>
-                                <a href="https://github.com/nahyeonsun/pf4-Hitejinro">사이트 보러가기</a>
+                                <a href="https://nahyeonsun.github.io/pf4-Hitejinro/index.html">깃소스</a>
+                                <a href="https://github.com/nahyeonsun/pf4-Hitejinro">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -373,8 +375,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/hbpaper-re/">사이트 보러가기</a>
+                                <a href="">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/hbpaper-re/">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -387,8 +389,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/vogue">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/vogue/">사이트 보러가기</a>
+                                <a href="https://github.com/nahyeonsun/vogue">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/vogue/">웹 사이트</a>
                             </li>
                           </ul>
                     </li>
@@ -401,8 +403,8 @@
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/pf-coach-you">깃허브 보러가기</a>
-                                <a href="https://nahyeonsun.github.io/pf-coach-you/">사이트 보러가기</a>
+                                <a href="https://github.com/nahyeonsun/pf-coach-you">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/pf-coach-you/">웹 사이트</a>
                             </li>
                             </ul>
                      </li>
@@ -415,8 +417,8 @@
                                 <li>참여도 : 100%</li>
                                 <li>페이지 : MAIN</li>
                                 <li class="view flex">
-                                    <a href="">깃허브 보러가기</a>
-                                    <a href="https://nahyeonsun.github.io/hangangfood/">사이트 보러가기</a>
+                                    <a href="">깃소스</a>
+                                    <a href="https://nahyeonsun.github.io/hangangfood/">웹 사이트</a>
                                 </li>
                             </ul>
                      </li>
@@ -429,8 +431,8 @@
                                 <li>참여도 : 100%</li>
                                 <li>페이지 : MAIN</li>
                                 <li class="view flex">
-                                    <a href="https://github.com/nahyeonsun/ppeum">깃허브 보러가기</a>
-                                    <a href="https://nahyeonsun.github.io/ppeum/">사이트 보러가기</a>
+                                    <a href="https://github.com/nahyeonsun/ppeum">깃소스</a>
+                                    <a href="https://nahyeonsun.github.io/ppeum/">웹 사이트</a>
                                 </li>
                             </ul>
                      </li>

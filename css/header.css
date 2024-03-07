@@ -10,15 +10,18 @@ header .wrap{
    grid-template-columns: 1fr auto;
    align-items: center;
    height: 100%;
+   width: auto;
+   padding: 0 31px;
+   /*! background-color: rgba(0,0,0,0.2); */
 }
 header h1{
   
 }
 header h1 a{
    font-size: 0;
-   width:74px;
-   height: 64px;
-   background-image: url(../img/rogo2.png);
+   width:60px;
+   height: 50px;
+   background-image: url(../img/rogo3.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -27,6 +30,11 @@ header h1 a{
 header ul{   
    display: flex;
    height: 100%;
+   transition: 0.5s;
+}
+header ul.small{
+   transform: scale(0.7);
+   transform-origin: 100% 50%;
 }
 header ul li{
    text-transform: uppercase;
@@ -34,7 +42,6 @@ header ul li{
 header ul li a{
    color: #403F39;
    text-transform: uppercase;
-   font-family: 'Noto Serif Balinese', serif;
    padding: 0 20px;
    height: 100%;
    display: block;
@@ -43,13 +50,13 @@ header ul li a{
    align-items: center;
    font-size: 23px;   
    transition: 0.5s;
-   letter-spacing: -1px;
+   font-weight: 600;
 }
 header ul li a:hover{
    opacity: 0.5;
 }
 .currentgnb{
    text-decoration: underline;
-   color: #3871ba;
+   color: #b93459;
    transform: scale(1.2);
 }

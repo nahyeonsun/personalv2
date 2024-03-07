@@ -10,19 +10,15 @@ div#title{
   background-size: cover;
   background-repeat: no-repeat;
 }
-div#title div.wrap{ /* 하위선택자 */
-   width: 1440px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
-   color: #786f5c;
+div#title div.wrap{
+  
 } 
 div#title h2{ 
    font-size: 140px;
    line-height: 1.5;
    color: #403F39;
+   font-family: "Playfair Display", serif;
+   transform: translateY(-30px) !important;
 }
 
 div#title h2 span.block{   

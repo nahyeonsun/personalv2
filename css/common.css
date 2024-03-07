@@ -1,5 +1,5 @@
 .wrap{
-  width: 1500px;
+  width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -7,13 +7,14 @@
   padding: 50px;
 }
 .paddingT50{
-  padding-top: 50px;
+  
+  padding-top: 130px;
 }
 .paddingR50{
   padding-right: 50px;
 }
 .paddingB50{
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .paddingL50{
   padding-left: 50px;
@@ -24,14 +25,12 @@
 }
 .h2{
   font-size: 70px;
-  text-transform: capitalize;
-  margin-bottom: 5px;
-  padding-bottom: 1px;
-  font-family: 'Noto Serif Balinese', serif;
+  text-transform: uppercase;
   color: #403F39;
+  transform: translateY(-50%) !important;
 }
 .h3{
-  font-size: 40px;
+  font-size: 35px;
   width: fit-content;
   color: #403f39;
 }
