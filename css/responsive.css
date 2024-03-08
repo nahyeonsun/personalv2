@@ -232,12 +232,11 @@
   section#portfolio .wrap ul.list li > ul{
     
   grid-row: 2;
-  text-align: center;
+  margin-top: 15px;
   }
   section#portfolio .wrap ul.list li > ul li.h3{    
     font-size: calc(45px * 0.6);
     width: fit-content;
-    align-self: center;
   }
   section#portfolio .wrap ul.list li > ul li{
     font-size: calc(23px * 0.7);
