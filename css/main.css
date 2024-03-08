@@ -29,7 +29,7 @@ section h2{
 section#about .profile{
   display: flex;
   column-gap: 45px;
-  margin-top: 20px;
+  margin-top: 50px;
   align-items: center;
 }
 section#about .profile .left{
