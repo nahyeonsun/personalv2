@@ -78,46 +78,40 @@
                 }
             );
         // 사이드메뉴 클릭 시 페이지 스크롤 이동
-            $("aside ul li:nth-child(1) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:"0px"},800);
-                    return false; 
-                }
-            );
-            $("aside ul li:nth-child(2) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()},800); 
-                    return false; 
-                }
-            );
-            $("aside ul li:nth-child(3) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*2},800); 
-                    return false; 
-                }
-            );
-            $("aside ul li:nth-child(4) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*4},800); 
-                    return false; 
-                }
-            );
-            $("aside ul li:nth-child(5) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*8},800); 
-                    return false; 
-                }
-            );
-        
+            $("aside ul li:nth-child(1) a").click(function(){
+                $("html,body").animate({scrollTop:"0px"},800);
+                return false; 
+            });
+            $("aside ul li:nth-child(2) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(3) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*2},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(4) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*3},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(5) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*4},800); 
+                return false; 
+            });
             // 스크롤이벤트
             $(window).scroll(function(){
             // 타이틀 부분에선 메뉴 색상 변경을 하지 않는다.
                 if($(window).scrollTop()<$("#title").height()){ 
                 // 대메뉴
                     $("header ul li a").removeClass("currentgnb");
-                    $("aside ul li:nth-child(1)").addClass("rogo");
                 // 어사이드메뉴
-
+                    $("aside ul li:nth-child(1)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(1)").removeClass("rogo");
+                    $("aside ul li:nth-child(1) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(1) a").removeClass("borderB");
+                    $("footer a.top").addClass("hideTop");
+                }else{
+                    $("footer a.top").removeClass("hideTop");
                 }
             // 어바웃 영역에서 해당 메뉴 색상 변경
                 if($(window).scrollTop()>=$("#about").height()){ 
@@ -125,10 +119,10 @@
                     $("header ul li:nth-child(1) a").addClass("currentgnb"); 
                     $("header ul li a").not("header ul li:nth-child(1) a").removeClass("currentgnb");
                 // 어사이드메뉴
-                    $("aside ul li:nth-child(1)").addClass("rogo");
-                    $("aside ul li").not("aside ul li:nth-child(1)").removeClass("rogo");
-                    $("aside ul li:nth-child(1) a").addClass("borderB");
-                    $("aside ul li a").not("aside ul li:nth-child(1) a").removeClass("borderB");
+                    $("aside ul li:nth-child(2)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(2)").removeClass("rogo");
+                    $("aside ul li:nth-child(2) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(2) a").removeClass("borderB");
                     // 타이틀 부분에서 탑버튼 숨기기
                     // $("footer a.top").fadeOut();
                 }
@@ -138,32 +132,32 @@
                     $("header ul li:nth-child(2) a").addClass("currentgnb");
                     $("header ul li a").not("header ul li:nth-child(2) a").removeClass("currentgnb");
                 // 어사이드 메뉴
-                    $("aside ul li:nth-child(2)").addClass("rogo");
-                    $("aside ul li").not("aside ul li:nth-child(2)").removeClass("rogo");
-                    $("aside ul li:nth-child(2) a").addClass("borderB");
-                    $("aside ul li a").not("aside ul li:nth-child(2) a").removeClass("borderB");
+                    $("aside ul li:nth-child(3)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(3)").removeClass("rogo");
+                    $("aside ul li:nth-child(3) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(3) a").removeClass("borderB");
                 }
             // 포트폴리오 영역에서 해당 메뉴 색상 변경
-                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#portfolio").height()){
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#skill").height()){
                 // 대메뉴
                     $("header ul li:nth-child(3) a").addClass("currentgnb"); 
                     $("header ul li a").not("header ul li:nth-child(3) a").removeClass("currentgnb");
                 // 어사이드 메뉴
-                    $("aside ul li:nth-child(3)").addClass("rogo");
-                    $("aside ul li").not("aside ul li:nth-child(3)").removeClass("rogo");
-                    $("aside ul li:nth-child(3) a").addClass("borderB");
-                    $("aside ul li a").not("aside ul li:nth-child(3) a").removeClass("borderB");    
+                    $("aside ul li:nth-child(4)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(4)").removeClass("rogo");
+                    $("aside ul li:nth-child(4) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(4) a").removeClass("borderB");   
                 }
             // 콘택트 영역에서 해당 메뉴 색상 변경
-                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#portfolio").height()+$("#contact").height()){
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#skill").height()+$("#portfolio").height()){
                 // 대메뉴
                     $("header ul li:nth-child(4) a").addClass("currentgnb"); 
                     $("header ul li a").not("header ul li:nth-child(4) a").removeClass("currentgnb");
                 // 어사이드 메뉴
-                    $("aside ul li:nth-child(4)").addClass("rogo");
-                    $("aside ul li").not("aside ul li:nth-child(4)").removeClass("rogo");
-                    $("aside ul li:nth-child(4) a").addClass("borderB");
-                    $("aside ul li a").not("aside ul li:nth-child(4) a").removeClass("borderB");  
+                    $("aside ul li:nth-child(5)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(5)").removeClass("rogo");
+                    $("aside ul li:nth-child(5) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(5) a").removeClass("borderB");  
                 }
             });
         });
@@ -512,7 +506,10 @@
         <aside>
             <ul>
                 <li class="rogo">
-                    <a class="borderB" href="">ABOUT</a>
+                    <a class="borderB" href="">홈</a>
+                </li>
+                <li>
+                    <a href="">ABOUT</a>
                 </li>
                 <li>
                     <a href="">SKILL</a>

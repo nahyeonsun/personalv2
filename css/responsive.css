@@ -7,9 +7,12 @@
     width: 100% !important;
   }
   .h2{
-    font-size: calc(70px * 0.7);
-    text-align: center;
+    font-size: calc(70px * 0.6);
+    justify-content: center !important;
     }
+  h2::after{
+    display: none !important;
+  }
   .h3{
     font-size: calc(40px * 0.6);
    }
@@ -17,13 +20,16 @@
   header{    
     background-color: #fff;
     padding: 10px 0;
+    position: fixed;
     z-index: 2;
-    height: 75px;
+    height: 90px;
+    padding: 0;
   }
   header .wrap{   
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   header h1{    
     padding-bottom: 5px;
@@ -31,6 +37,7 @@
   header h1 a{   
     width: calc(74px * 0.6);
     height: calc(64px * 0.6);
+    margin: 0 auto;
   }
   header ul{
     height: fit-content;
@@ -38,20 +45,22 @@
   }
   header ul li a{   
     font-size: calc(23px * 0.6);
-    padding: 0px 8px;
+    padding: 0px 12px;
   }
   header ul li a:hover{
     transform: scale(1);
+    transition: 0.5s;
   }
   /*  타이틀 영역  */
   div#title div.wrap{ 
     width: 100%;
   }
   div#title h2{    
-    font-size: calc(140px * 0.35);
+    font-size: calc(130px * 0.5);
+    transform: translateY(0px) !important;
   }
   div#title h2 span{
-    font-size: calc(80px * 0.4);
+    font-size: calc(70px * 0.6) !important;
   }
   div#title .mouse a{    
     background-image: url(../img/swipe_up.svg);
@@ -65,6 +74,10 @@
   /*  about  */
   section#about{    
     height: fit-content;
+  }
+  section#about .wrap h2{
+    
+  display: block;
   }
   section#about .profile{ 
     display: flex;
@@ -201,6 +214,14 @@
   section#portfolio{
     height: fit-content;
   }
+  section#portfolio .wrap h2{
+    
+  margin-bottom: 20px;
+  }
+  section#portfolio .wrap ul.list{    
+    transform: translateY(0px) !important;
+    margin-top: 15px;
+  }
   section#portfolio .wrap ul.list li{
     
   }
@@ -248,6 +269,7 @@
   }
   section#contact .box1 h2{
     font-size: 30px;
+    border-bottom: 1px solid;
   }
   section#contact .box1 h3{
     font-size: calc(30px * 0.8);
@@ -266,6 +288,10 @@
   section#contact .box2 p .call{
     left: 55%;
     top: 28px;
+  }
+  /* 어사이드메뉴   */
+  aside{
+    display: none;
   }
   /*  footer  */
   section#footer .wrap p{  

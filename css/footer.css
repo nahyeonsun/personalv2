@@ -34,11 +34,11 @@ footer a.top::before{
   height: 24px;
   transition: all 1s;
   display: block;
+  transition: 1s;
 }
 footer a.top:hover::before{  
   transform: translateY(-7px);
 }
-.show{
-  display: flex !important;
-  position: fixed;
+.hideTop{
+  display: none !important;
 }

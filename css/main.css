@@ -5,14 +5,12 @@ section#about{
   min-height: 700px;
   display: flex;
   flex-direction: column;
-  background-color: #7d717514;
+  background-color: #7d717517;
 }
 section#about .wrap{
  
 }
 section#about .wrap h2{
-  display: flex;
-  justify-content: space-between
 }
 section#about .wrap h2::after{
   content: "";
@@ -24,6 +22,9 @@ section#about .wrap h2::after{
 }
 section h2{
   color: #f684a4 !important;
+  display: flex;
+  justify-content: space-between !important;
+  display: flex !important;
 }
 section#about .profile{
   display: flex;
@@ -50,17 +51,17 @@ section#about .profile .left ul li{
   color: white;
 }
 section#about .profile .left ul li a{ 
-  width: 96px;
-  height: 40px;
+  width: 90px;
+  height: 35px;
   font-size: 14px;
   border-radius: 15px;
   display: block;
-  line-height: 40px;
+  line-height: 35px;
   text-align: center;
   color: #333;
   font-weight: 500;
   /*! border: 1px solid #403f39; */
-  background-color: #e6e6e6;
+  background-color: #dcdcdc;
 }
 section#about .profile .left ul li a:hover{ 
   background-color: #403f39;
@@ -149,7 +150,7 @@ section#skill .wrap h2::after{
   content: "";
   border-bottom: 3px solid;
   display: inline-block;
-  width: 75%;
+  width: 84%;
   opacity: 0.2;
   transform: translateY(-30px);
 }
@@ -504,8 +505,6 @@ section#skill .wrap ul li span.vue::after{
 section#portfolio{
   height: 100vh;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
   min-height: 700px;
   background-image: url(../img/back.jpg);
   background-size: cover;
@@ -513,7 +512,6 @@ section#portfolio{
 section#portfolio .wrap{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 section#portfolio .wrap h2{
 }
@@ -521,9 +519,9 @@ section#portfolio .wrap h2::after{
   content: "";
   border-bottom: 3px solid;
   display: inline-block;
-  width: 75%;
+  width: 69%;
   opacity: 0.2;
-  transform: translate(40%,-93px);
+  transform: translatey(-34px);
 }
 section#portfolio .wrap ul.menu{
   display: none;
@@ -544,7 +542,7 @@ section#portfolio .wrap ul.menu li:not(:first-child) a::before{
 section#portfolio .wrap ul.list{
   display: flex;
   flex-direction: column;
-  transform: translateY(-50px) !important;
+  margin-top: 90px;
 }
 section#portfolio .slick-prev{
   
@@ -706,13 +704,14 @@ section#contact .box1 h2{
    text-transform: uppercase;
    color: #403f39 !important;
    transform: translateY(0px) !important;
+   display: block !important;
 }
 section#contact .box1 h2::after{
   content: "";
   border-bottom: 1px solid;
   width: 100%;
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 section#contact .box1 h3{
    font-size: 30px;
