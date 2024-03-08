@@ -542,7 +542,7 @@ section#portfolio .wrap ul.menu li:not(:first-child) a::before{
 section#portfolio .wrap ul.list{
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 80px;
 }
 section#portfolio .slick-prev{
   
