@@ -6,11 +6,16 @@ section#about{
   display: flex;
   flex-direction: column;
   background-color: #7d717517;
+  position: relative;
+  z-index: 1;
+}
+section#about iframe{
 }
 section#about .wrap{
  
 }
 section#about .wrap h2{
+  
 }
 section#about .wrap h2::after{
   content: "";
@@ -31,6 +36,7 @@ section#about .profile{
   column-gap: 45px;
   margin-top: 50px;
   align-items: center;
+  position: relative;
 }
 section#about .profile .left{
   display: flex;

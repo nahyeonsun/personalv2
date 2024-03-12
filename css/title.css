@@ -6,7 +6,7 @@ div#title{
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
-  background-image: url(../img/title.jpg);
+  /*! background-image: url(../img/title.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
 }

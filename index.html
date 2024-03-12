@@ -251,6 +251,29 @@
             $("section:not(:#footer)").css("height","100%");
         }
     </script>
+
+    <!-- 타이틀 영상 배경 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
+    <style>
+        #background {
+            z-index: -1;
+            background-image: url(img/ocean.jpg);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #open {
+            /* z-index: -1; */
+        }
+    </style>
+    <script>
+        jQuery( function() { 
+        // $는 jQuery 단축표기, $(document).ready(function(){});에서 $(document).ready를 단축표기해서 $(function(){})
+            jQuery( '#background, #open' ).YTPlayer();
+        });
+    </script>
 </head>
 <body>
     <!-- 메뉴영역 -->
@@ -272,8 +295,20 @@
                 H_line's
                 <span class="block h1" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="500">Web Publisher Portfolio</span></h2>
         </div>
-        <div data-aos="fade-down" data-aos-duration="1200" data-aos-delay="900" class="mouse">
-            <a href="">down</a>
+        <!-- 유튜브 영상 -->
+        <div id="background" class="player" data-property="{
+            videoURL: 'https://youtu.be/TBsWtqsg4c0',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: 'body',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 1
+            }">
         </div>
     </div>
     <!-- 메인영역 -->
@@ -281,6 +316,8 @@
         <section id="about" class="box paddingT50 paddingB50 borderR30  marginT50">
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">profile</h2>
+                <!-- 유튜브 영상 -->
+                <iframe width="1214" height="683" src="https://www.youtube.com/embed/LqME1y6Mlyg" title="[𝐖𝐎𝐑𝐊&amp;𝐉𝐀𝐙𝐙] 사무실에서 일하다가 몰래 리듬타기 좋은 펑키한 재즈비지엠😎💖 l Relaxing Jazz Piano Music for Office, Work, Study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="profile">
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="left">
                         <img src="img/my.jpg" alt="">
