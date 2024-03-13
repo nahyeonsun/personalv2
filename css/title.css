@@ -6,7 +6,7 @@ div#title{
   flex-direction: column;
   justify-content: center;
   min-height: 700px;
-  /*! background-image: url(../img/title.jpg); */
+  background-image: url(../img/title.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,16 +14,31 @@ div#title div.wrap{
   
 } 
 div#title h2{ 
-   font-size: 130px;
+   font-size: 120px;
    line-height: 1.5;
    color: #403F39;
    font-family: "Playfair Display", serif;
    transform: translateY(-30px) !important;
-}
+   text-transform: capitalize;
 
+}
 div#title h2 span.block{   
-   font-size: 70px;
+   font-size: 65px;
    color: #403F39;
+   position: relative;
+}
+div#title h2 span.block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 18%;
+    width: 4px;
+    height: 100%;
+    background-color: #403F39;
+}
+div#title h2 span.block.active::after{
+    display: none;
 }
 div#title .mouse{ 
   margin: 0 auto;

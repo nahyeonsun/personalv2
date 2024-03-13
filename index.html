@@ -35,6 +35,27 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+        // \n은 자바스크립트의 줄바꿈 표시
+            const text = "H_line's\nWeb Publisher\nPortfolio"; 
+            let index = 0;
+            let direction = 1;
+            function type() {
+                document.getElementById('typingText').innerHTML = text.slice(0, index).replace(/\n/g, "<br>");
+            // 1: 정방향, -1: 역방향
+                if (index >= text.length && direction === 1) {
+                    direction = -1;
+                } else if (index <= 0 && direction === -1) {
+                    direction = 1;
+                }
+
+                if (direction === 1) {
+                    index++;
+                } else {
+                    index--;
+                }
+            }
+            setInterval(type, 200); // 타이핑 속도 조절
+
         // 탑버튼을 클릭하면 상단으로 감
             $("footer a.top").click(function(){
                 $("html,body").animate({scrollTop:"0px"},2000);
@@ -110,7 +131,7 @@
                     $("aside ul li:nth-child(1) a").addClass("borderB");
                     $("aside ul li a").not("aside ul li:nth-child(1) a").removeClass("borderB");
                     $("footer a.top").addClass("hideTop");
-                }else{
+                } else{
                     $("footer a.top").removeClass("hideTop");
                 }
             // 어바웃 영역에서 해당 메뉴 색상 변경
@@ -159,9 +180,10 @@
                     $("aside ul li:nth-child(5) a").addClass("borderB");
                     $("aside ul li a").not("aside ul li:nth-child(5) a").removeClass("borderB");  
                 }
-            });
+    
         });
-    </script>
+        });
+        </script>
 
      <!-- slick -->
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -252,28 +274,6 @@
         }
     </script>
 
-    <!-- 타이틀 영상 배경 -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
-    <style>
-        #background {
-            z-index: -1;
-            background-image: url(img/ocean.jpg);
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        #open {
-            /* z-index: -1; */
-        }
-    </style>
-    <script>
-        jQuery( function() { 
-        // $는 jQuery 단축표기, $(document).ready(function(){});에서 $(document).ready를 단축표기해서 $(function(){})
-            jQuery( '#background, #open' ).YTPlayer();
-        });
-    </script>
 </head>
 <body>
     <!-- 메뉴영역 -->
@@ -291,33 +291,17 @@
     <!-- 타이틀영역 -->
     <div id="title" class="box">
         <div class="wrap">
-            <h2 data-aos="flip-left" data-aos-duration="700" data-aos-delay="300" class="h2 center">
-                H_line's
-                <span class="block h1" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="500">Web Publisher Portfolio</span></h2>
+            <h2 class="h2 center">
+                <span id="typingText"></span>
+                <span class="block h1"></span>
+            </h2>
         </div>
-        <!-- 유튜브 영상 -->
-        <div id="background" class="player" data-property="{
-            videoURL: 'https://youtu.be/TBsWtqsg4c0',
-            mute: true,
-            showControls: false,
-            useOnMobile: true,
-            quality: 'highres',
-            containment: 'body',
-            loop: true,
-            autoPlay: true,
-            stopMovieOnBlur: false,
-            startAt: 0,
-            opacity: 1
-            }">
-        </div>
-    </div>
+    </div>    
     <!-- 메인영역 -->
     <main>
         <section id="about" class="box paddingT50 paddingB50 borderR30  marginT50">
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">profile</h2>
-                <!-- 유튜브 영상 -->
-                <iframe width="1214" height="683" src="https://www.youtube.com/embed/LqME1y6Mlyg" title="[𝐖𝐎𝐑𝐊&amp;𝐉𝐀𝐙𝐙] 사무실에서 일하다가 몰래 리듬타기 좋은 펑키한 재즈비지엠😎💖 l Relaxing Jazz Piano Music for Office, Work, Study" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="profile">
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="left">
                         <img src="img/my.jpg" alt="내 사진">
@@ -378,8 +362,8 @@
                     <li>포토샵 <span class="ps"> 70%</span></li>
                     <li>일러스트 <span class="ai"> 70%</span></li>
                     <li>인디자인 <span class="id"> 70%</span></li>
-                    <li>프리미어프로 <span class="pr"> 70%</span></li>
-                    <li>vue <span class="vue"> 30%</span></li>
+                    <li>프리미어 <span class="pr"> 70%</span></li>
+                    <li>figma<span class="vue"> 70%</span></li>
                 </ul>
             </div>
         </section>
@@ -388,48 +372,18 @@
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">portfolio</h2>
                 <ul class="list flex pfSlide">
-                    <li class="accu">
-                        <img data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" src="img/pf1.png" alt="ACCUNIQ">
-                        <ul data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                            <li class="h3">ACCUNIQ</li>
+                    <li class="hangang">
+                        <img src="img/hangang.png" alt="한강식품">
+                        <ul>
+                            <li class="h3">한강식품</li>
                             <li>포트폴리오용 카피사이트 제작</li>
                             <li>버전 : PC</li>
-                            <li>사용 툴 : HTML5, CSS3</li>
-                            <li>참여도 : 100%</li>
-                            <li>페이지 : MAIN</li>
-                            <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/accuniq">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/accuniq/">웹 사이트</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="lpoint">
-                        <img src="img/pf1.png" alt="LPOINT2">
-                        <ul>
-                            <li class="h3">L.POINT</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
-                            <li>버전 : PC</li>
-                            <li>사용툴 : HTML5, CSS3</li>
-                            <li>참여도 : 100%</li>
-                            <li>페이지 : MAIN</li>
-                            <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/lpoint">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/lpoint/">웹 사이트</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hp">
-                        <img src="img/hbpaper.png" alt="HB PAPER">
-                        <ul>
-                            <li class="h3">HB PAPER</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
-                            <li>버전 : PC, 모바일, 태블릿</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/hbpaper">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/hbpaper/">웹 사이트</a>
+                                <a href="https://github.com/nahyeonsun/hangangfood">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/hangangfood/">웹 사이트</a>
                             </li>
                         </ul>
                     </li>
@@ -440,7 +394,7 @@
                             <li>포트폴리오용 카피사이트 제작</li>
                             <li>버전 : PC, 모바일, 태블릿</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, Javascript</li>
-                            <li>참여도 : 100%</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
                             <li>페이지 : MAIN, SUB</li>
                             <li class="view flex">
                                 <a href="https://nahyeonsun.github.io/pf4-Hitejinro/index.html">깃소스</a>
@@ -463,22 +417,22 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="vogue">
-                        <img src="img/vogue.png" alt="VOGUE">
+                    <li class="ppeum">
+                        <img src="img/ppeum.png" alt="쁨클리닉">
                         <ul>
-                            <li class="h3">VOGUE</li>
+                            <li class="h3">쁨클리닉</li>
                             <li>포트폴리오용 카피사이트 제작</li>
-                            <li>버전 : PC, 모바일</li>
+                            <li>버전 : PC</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/vogue">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/vogue/">웹 사이트</a>
+                                <a href="https://github.com/nahyeonsun/ppeum">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/ppeum/">웹 사이트</a>
                             </li>
-                          </ul>
+                        </ul>
                     </li>
-                     <li class="coach">
+                    <li class="coach">
                         <img src="img/coach.png" alt="COACHYOU">
                         <ul>
                             <li class="h3">COACHYOU</li>
@@ -492,37 +446,68 @@
                                 <a href="https://nahyeonsun.github.io/pf-coach-you/">웹 사이트</a>
                             </li>
                             </ul>
-                     </li>
-                     <li class="hangang">
-                            <img src="img/hangang.png" alt="한강식품">
-                            <ul>
-                                <li class="h3">한강식품</li>
-                                <li>포트폴리오용 카피사이트 제작</li>
-                                <li>버전 : PC</li>
-                                <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
-                                <li>참여도 : 100%</li>
-                                <li>페이지 : MAIN</li>
-                                <li class="view flex">
-                                    <a href="https://github.com/nahyeonsun/hangangfood">깃소스</a>
-                                    <a href="https://nahyeonsun.github.io/hangangfood/">웹 사이트</a>
-                                </li>
-                            </ul>
-                     </li>
-                     <li class="pf9">
-                            <img src="img/ppeum.png" alt="쁨클리닉">
-                            <ul>
-                                <li class="h3">쁨클리닉</li>
-                                <li>포트폴리오용 카피사이트 제작</li>
-                                <li>버전 : PC</li>
-                                <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
-                                <li>참여도 : 100%</li>
-                                <li>페이지 : MAIN</li>
-                                <li class="view flex">
-                                    <a href="https://github.com/nahyeonsun/ppeum">깃소스</a>
-                                    <a href="https://nahyeonsun.github.io/ppeum/">웹 사이트</a>
-                                </li>
-                            </ul>
-                     </li>
+                    </li>
+
+                     <li class="vogue">
+                        <img src="img/vogue.png" alt="VOGUE">
+                        <ul>
+                            <li class="h3">VOGUE</li>
+                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a href="https://github.com/nahyeonsun/vogue">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/vogue/">웹 사이트</a>
+                            </li>
+                          </ul>
+                    </li>
+                    <li class="hp">
+                        <img src="img/hbpaper.png" alt="HB PAPER">
+                        <ul>
+                            <li class="h3">HB PAPER</li>
+                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>버전 : PC, 모바일, 태블릿</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a href="https://github.com/nahyeonsun/hbpaper">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/hbpaper/">웹 사이트</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li class="accu">
+                        <img src="img/pf1.png" alt="ACCUNIQ">
+                        <ul data-aos-delay="300">
+                            <li class="h3">ACCUNIQ</li>
+                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용 툴 : HTML5, CSS3</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a href="https://github.com/nahyeonsun/accuniq">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/accuniq/">웹 사이트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lpoint">
+                        <img src="img/lpoint.png" alt="LPOINT2">
+                        <ul>
+                            <li class="h3">L.POINT</li>
+                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a href="https://github.com/nahyeonsun/lpoint">깃소스</a>
+                                <a href="https://nahyeonsun.github.io/lpoint/">웹 사이트</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>

@@ -68,6 +68,7 @@ section#about .profile .left ul li a{
   font-weight: 500;
   /*! border: 1px solid #403f39; */
   background-color: #dcdcdc;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 section#about .profile .left ul li a:hover{ 
   background-color: #403f39;
@@ -222,7 +223,7 @@ section#skill .wrap ul li:nth-child(11)::before{
   background-image: url(../img/pr.png);
 }
 section#skill .wrap ul li:nth-child(12)::before{
-  background-image: url(../img/vue.png);
+  background-image: url(../img/figma.png);
 }
 section#skill .wrap ul li:nth-child(13)::before{
   background-image: url(../img/ov.png);
@@ -497,11 +498,11 @@ section#skill .wrap ul li span.vue{
   z-index: 1;
 }
 section#skill .wrap ul li span.vue::before{
-  width: 10%;
-  background-color: #4fbb88;
+  width: 40%;
+  background-color: #ff7563;
 }
 section#skill .wrap ul li span.vue::after{
-  content: "10%";  
+  content: "40%";  
   font-size: 17px;
   transform: translateY(-6px);
   display: inline-block;
@@ -575,13 +576,13 @@ section#portfolio .wrap ul.list li>ul{
   flex-direction: column;
 }
 section#portfolio .wrap ul.list li>ul li.h3{
-  font-size: 45px;
+  font-size: 43px;
   font-weight: bold;
   grid-column: 1 / span 2;
   padding-bottom: 10px;
 }
 section#portfolio .wrap ul.list li>ul li{  
-  font-size: 20px;
+  font-size: 19px;
   grid-column: 1 / span 2;
   line-height: 1.7;
 }
@@ -591,7 +592,7 @@ section#portfolio .wrap ul.list li .view{
   margin-top: 10px;
 }
 section#portfolio .wrap ul.list li .view a{
-  border: 1px solid #403f39;
+  border: 1px solid rgba(0,0,0,0.3);
   border-radius: 10px;
   font-size: 14px;
   display: block;
@@ -602,6 +603,7 @@ section#portfolio .wrap ul.list li .view a{
   background-color: transparent;
   color: #333;
   margin-top: 10px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 section#portfolio .wrap ul.list li .view a:hover{
   background-color: #403f39;
@@ -634,32 +636,33 @@ section#portfolio .slick-dots li.slick-active button::before{
   font-weight: 600;
 }
 section#portfolio .slick-dots li:nth-child(1) button::before{
-  content: "ACCUNIQ";
+  content: "한강식품";
 }
 section#portfolio .slick-dots li:nth-child(2) button::before{
-  content: "L.POINT";
-}
-section#portfolio .slick-dots li:nth-child(3) button::before{
-  content: "HB PAPER";
-}
-section#portfolio .slick-dots li:nth-child(4) button::before{
   content: "HITE 진로";
 }
-section#portfolio .slick-dots li:nth-child(5) button::before{
+section#portfolio .slick-dots li:nth-child(3) button::before{
   content: "HB 리뉴얼";
+}
+section#portfolio .slick-dots li:nth-child(4) button::before{
+  content: "쁨클리닉";
+}
+section#portfolio .slick-dots li:nth-child(5) button::before{
+  content: "COACHYOU";
 }
 section#portfolio .slick-dots li:nth-child(6) button::before{
   content: "VOGUE";
 }
 section#portfolio .slick-dots li:nth-child(7) button::before{
-  content: "COACHYOU";
+  content: "HB PAPER";
 }
 section#portfolio .slick-dots li:nth-child(8) button::before{
-  content: "한강식품";
+  content: "ACCUNIQ";
 }
 section#portfolio .slick-dots li:nth-child(9) button::before{
-  content: "쁨클리닉";
+  content: "L.POINT";
 }
+
 section#portfolio .slick-next::before{
   background-image: url(../img/right.svg);
   display: block;
