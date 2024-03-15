@@ -1,6 +1,6 @@
 /* 상단영역 */
 header{
-   height: 85px;
+   height: 100px;
    position: absolute;
    width: 100%;
 }
@@ -12,13 +12,13 @@ header .wrap{
    align-content: center;
 }
 header h1{
-  
+   align-self: center;
 }
 header h1 a{
    font-size: 0;
-   width:60px;
-   height: 50px;
-   background-image: url(../img/rogo2.png);
+   width:66px;
+   height: 70px;
+   background-image: url(../img/rogo.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: contain;
@@ -47,7 +47,6 @@ header ul li a{
    align-items: center;
    font-size: 23px;   
    transition: 0.5s;
-   font-weight: 600;
 }
 header ul li a:hover{
    opacity: 0.5;

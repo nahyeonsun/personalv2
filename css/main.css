@@ -54,7 +54,6 @@ section#about .profile .left ul{
   padding-top: 20px;
 }
 section#about .profile .left ul li{
-  color: white;
 }
 section#about .profile .left ul li a{ 
   width: 90px;
@@ -68,11 +67,29 @@ section#about .profile .left ul li a{
   font-weight: 500;
   /*! border: 1px solid #403f39; */
   background-color: #dcdcdc;
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section#about .profile .left ul li a:hover{ 
   background-color: #403f39;
   color: white;
+}
+section#about .profile .left ul li:nth-child(1) a::before{
+  content: "";
+  background-image: url(../img/2179365.png);
+  display: block;
+  width: 25px;
+  height: 25px;
+  /*! background-color: black; */
+}
+section#about .profile .left ul li:nth-child(2) a::before{
+  content: "";
+  background-image: url(../img/git.png);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 section#about .profile .right{
   display: grid;
@@ -178,11 +195,12 @@ section#skill .wrap ul li{
    align-items: center;
    position: relative;
    font-size: 18px;
+   height: 60px;
 }
 section#skill .wrap ul li::before{
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   display: block;
   background-size: 90%;
   background-repeat: no-repeat;
@@ -208,16 +226,16 @@ section#skill .wrap ul li:nth-child(6)::before{
   background-image: url(../img/ui.png);
 }
 section#skill .wrap ul li:nth-child(7)::before{
-  background-image: url(../img/zen.png);
-}
-section#skill .wrap ul li:nth-child(8)::before{
   background-image: url(../img/ps.png);
 }
-section#skill .wrap ul li:nth-child(9)::before{
+section#skill .wrap ul li:nth-child(8)::before{
   background-image: url(../img/ai.png);
 }
+section#skill .wrap ul li:nth-child(9)::before{
+  background-image: url(../img/pr.png);
+}
 section#skill .wrap ul li:nth-child(10)::before{
-  background-image: url(../img/id.png);
+  background-image: url(../img/figma.png);
 }
 section#skill .wrap ul li:nth-child(11)::before{
   background-image: url(../img/pr.png);
@@ -233,10 +251,11 @@ section#skill .wrap ul li:nth-child(14)::before{
 }
 section#skill .wrap ul li span{
   background-color: #acacac;
+  height: 15px !important;
 }
 section#skill .wrap ul li span::before{
   content: "";
-  height: 12px;
+  height: 15px;
   display: block;
   position: absolute;
   left: 0;
@@ -247,20 +266,19 @@ section#skill .wrap ul li span.html{
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
-  height: 12px;
+  height: 20px;
   font-size: 0;
   display: block;
   position: relative;
   z-index: 1;
 }
 section#skill .wrap ul li span.html::before{
-  width: 80%;
+  width: 85%;
   background-color: #ff5722;
 }
 section#skill .wrap ul li span.html::after{
-  content: "80%";  
+  content: "85%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -276,13 +294,12 @@ section#skill .wrap ul li span.css{
   z-index: 1;
 }
 section#skill .wrap ul li span.css::before{
-  width: 75%;
+  width: 80%;
   background-color: #359afe;
 }
 section#skill .wrap ul li span.css::after{
-  content: "75%";  
+  content: "80%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -298,13 +315,12 @@ section#skill .wrap ul li span.jq{
   z-index: 1;
 }
 section#skill .wrap ul li span.jq::before{
-  width: 30%;
+  width: 45%;
   background-color: #d64443;
 }
 section#skill .wrap ul li span.jq::after{
-  content: "30%";  
+  content: "45%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -327,7 +343,6 @@ section#skill .wrap ul li span.java::before{
 section#skill .wrap ul li span.java::after{
   content: "25%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -350,7 +365,6 @@ section#skill .wrap ul li span.sass::before{
 section#skill .wrap ul li span.sass::after{
   content: "80%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -372,7 +386,6 @@ section#skill .wrap ul li span.web::before{
 section#skill .wrap ul li span.web::after{
   content: "90%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -394,7 +407,6 @@ section#skill .wrap ul li span.zen::before{
 section#skill .wrap ul li span.zen::after{
   content: "80%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -416,7 +428,6 @@ section#skill .wrap ul li span.ps::before{
 section#skill .wrap ul li span.ps::after{
   content: "90%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -438,7 +449,6 @@ section#skill .wrap ul li span.ai::before{
 section#skill .wrap ul li span.ai::after{
   content: "70%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -469,7 +479,6 @@ section#skill .wrap ul li span.pr{
   margin-left: 21px;
   padding-left: 70%;
   box-sizing: border-box;
-  height: 12px;
   font-size: 0;
   display: block;
   position: relative;
@@ -482,7 +491,6 @@ section#skill .wrap ul li span.pr::before{
 section#skill .wrap ul li span.pr::after{
   content: "85%";  
   font-size: 17px;
-  transform: translateY(-6px);
   display: inline-block;
   margin-left: 10px;
 }
@@ -619,7 +627,7 @@ section#portfolio .slick-dots{
   display: flex;
   width: 75%;
   position: static;
-  margin: 0 auto;
+  /*! margin: 0 auto; */
 }
 section#portfolio .slick-dots li button::before{
   font-size: 18px;
@@ -662,7 +670,6 @@ section#portfolio .slick-dots li:nth-child(8) button::before{
 section#portfolio .slick-dots li:nth-child(9) button::before{
   content: "L.POINT";
 }
-
 section#portfolio .slick-next::before{
   background-image: url(../img/right.svg);
   display: block;
