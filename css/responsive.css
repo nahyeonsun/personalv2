@@ -84,12 +84,13 @@
   font-size: calc(48px * 0.6);
   }
   section#about .profile li{
-    
-  font-size: calc(18px * 0.8);
+    font-size: calc(18px * 0.8);
   }
-
-
   /*  portfolio  */
+  section#portfolio{
+    
+  height: fit-content;
+  }
   section#portfolio .slick-dots li button::before{   
     font-size: calc(18px * 0.8);
     /*! content: "●" !important; */
@@ -116,11 +117,16 @@
   section#contact .box2 p a{ 
     font-size: calc(20px * 0.8);
   }
+  section#contact .box2 p:nth-child(2) a{
+    
+  font-size: calc(32px * 0.8) !important;
+  }
   section#contact .box2 p .mail{
     left: calc(41% * 1.2);
   }
   section#contact .box2 p .call{
-    left: calc(65% * 1.06);
+    left: 55%;
+    top: 35px;
   }
   section#footer .wrap{
     padding: 0;
@@ -232,9 +238,6 @@
   }
 
   /*  skill  */
-  section#skill{
-    height: fit-content;
-  }
   section#skill .wrap ul{
     width: 100%;
   }
@@ -403,16 +406,13 @@
     width: 310px;
     height: 150px;
   }
-  section#contact .box2 p a{   
-    font-size: 14px;
-  }
   section#contact .box2 p .mail{ 
-    left: 28%;
-    top: 27px;
+    left: 19%;
+    top: 24px;
   }
   section#contact .box2 p .call{
-    left: 55%;
-    top: 28px;
+    left: 25%;
+    top: 38px;
   }
   /*  footer  */
   section#footer .wrap p{  
