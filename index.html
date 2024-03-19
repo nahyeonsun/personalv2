@@ -20,8 +20,8 @@
 
     <!-- 구글폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/header.css">
@@ -36,17 +36,17 @@
     <script type="text/javascript">
         $(document).ready(function(){
         // \n은 자바스크립트의 줄바꿈 표시
-            const text = "H_line's\nWeb Publisher\nPortfolio"; 
+            const text = "H_line's Web Publisher\nPortfolio"; 
             let index = 0;
             let direction = 1;
             function type() {
                 document.getElementById('typingText').innerHTML = text.slice(0, index).replace(/\n/g, "<br>");
             // 1: 정방향, -1: 역방향
-                if (index >= text.length && direction === 1) {
-                    direction = -1;
-                } else if (index <= 0 && direction === -1) {
-                    direction = 1;
-                }
+                // if (index >= text.length && direction === 1) {
+                //     direction = -1;
+                // } else if (index <= 0 && direction === -1) {
+                //     direction = 1;
+                // }
                 if (direction === 1) {
                     index++;
                 } else {
@@ -279,7 +279,7 @@
         <div class="wrap">
             <h1><a href="#">nhs</a></h1>
             <ul>
-                <li><a href="">ABOUT</a></li>
+                <li><a href="">PROFILE</a></li>
                 <li><a href="">SKILL</a></li>
                 <li><a href="">PORTFOLIO</a></li>
                 <li><a href="">CONTACT</a></li>
@@ -291,8 +291,8 @@
         <div class="wrap">
             <h2 class="h2 center">
                 <span id="typingText"></span>
-                <span class="block h1"></span>
             </h2>
+            <span class="mouse"><a href="">scroll</a></span>
         </div>
     </div>    
     <!-- 메인영역 -->
@@ -300,17 +300,18 @@
         <section id="about" class="box paddingT50 paddingB50 borderR30  marginT50">
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">profile</h2>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">UI/UX 디자이너를 꿈꾸는 저를 소개합니다.</p>
                 <div class="profile">
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="left">
                         <img src="img/my.jpg" alt="내 사진">
                         <ul>
-                            <li><a href="https://www.canva.com/design/DAF7WKxqVyU/YN7Xj1s4XMJVhEfLNVlyFQ/view?utm_content=DAF7WKxqVyU&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel#1">이력서</a></li>
-                            <li><a href="https://github.com/nahyeonsun">깃허브</a></li>
+                            <li><a href="https://www.canva.com/design/DAF7WKxqVyU/YN7Xj1s4XMJVhEfLNVlyFQ/view?utm_content=DAF7WKxqVyU&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel#1" target="_blank">이력서</a></li>
+                            <li><a href="https://github.com/nahyeonsun" target="_blank">깃허브</a></li>
                         </ul>
                     </div>
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="right">
                         <div class="ab">
-                            <h3 class="h3">ABOUT ME</h3>
+                            <h3 class="hide">ABOUT ME</h3>
                             <ul>
                                 <li>나현선<li>
                                 <li>1998.12.23</li>
@@ -349,17 +350,24 @@
         <section id="skill" class="box paddingT50 paddingB50 borderR30  marginT50">
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">skill</h2>
-                <ul data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300" class="list flex between">
-                    <li>HTML5 <span class="html"> 70%</span></li>
-                    <li>CSS3 <span class="css"> 70%</span></li>
-                    <li>jQuery <span class="jq"> 70%</span></li>
-                    <li>Javascript <span class="java"> 70%</span></li>
-                    <li>Sass <span class="sass"> 70%</span></li>
-                    <li>웹접근성 <span class="web"> 70%</span></li>
-                    <li>포토샵 <span class="ps"> 70%</span></li>
-                    <li>일러스트 <span class="ai"> 70%</span></li>
-                    <li>프리미어 <span class="pr"> 70%</span></li>
-                    <li>figma<span class="vue"> 70%</span></li>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">여러 경험을 통한 검증된 능력을 보유하고 있습니다.</P>
+                <ul class="list flex between">
+                    <li>HTML5<span class="html"> 70%</span></li>
+                    <li>Photoshop<span class="ps"> 70%</span></li>
+                    <li>CSS3<span class="css"> 70%</span></li>
+                    <li>Illustrator<span class="ai"> 70%</span></li>
+                    <li>jQuery<span class="jq"> 70%</span></li>
+                    <li>premiere pro<span class="pr"> 70%</span></li>
+                    <li>Javascript<span class="java"> 70%</span></li>
+                    <li>after effects<span class="ae"> 70%</span></li>
+                    <li>젠코딩<span class="zen"> 70%</span></li>
+                    <li>웹접근성<span class="web"> 70%</span></li>
+                    <li>Sass<span class="sass"> 70%</span></li>
+                    <li>웹표준<span class="w3c"> 70%</span></li>
+                    <li>Visual Studio Code<span class="vv"> 70%</span></li>
+                    <li>figma<span class="figma"> 70%</span></li>
+                    <li>카카오 오븐<span class="boot"> 70%</span></li>
+                    <li>Vue<span class="vue"> 70%</span></li>
                 </ul>
             </div>
         </section>
@@ -367,19 +375,20 @@
         <section id="portfolio" class="box paddingT50 paddingB50 borderR30 marginT50">
             <div class="wrap">
                 <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">portfolio</h2>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">최근 5개월간 진행한 프로젝트입니다.</P>
                 <ul class="list flex pfSlide">
                     <li class="hangang">
                         <img src="img/hangang.png" alt="한강식품">
                         <ul>
                             <li class="h3">한강식품</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/hangangfood">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/hangangfood/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/hangangfood/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/hangangfood" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
@@ -387,14 +396,14 @@
                         <img src="img/pf4.png" alt="HITE 진로">
                         <ul>
                             <li class="h3">HITE 진로</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC, 모바일, 태블릿</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, Javascript</li>
                             <li>참여도 : 수업 중 클론코딩 참여</li>
                             <li>페이지 : MAIN, SUB</li>
                             <li class="view flex">
-                                <a href="https://nahyeonsun.github.io/pf4-Hitejinro/index.html">깃소스</a>
-                                <a href="https://github.com/nahyeonsun/pf4-Hitejinro">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/Hitejinro/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/Hitejinro" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
@@ -402,14 +411,14 @@
                         <img src="img/hbre.png" alt="HB PAPER 리뉴얼">
                         <ul>
                             <li class="h3">HB PAPER 리뉴얼</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>웹사이트 재디자인</li>
                             <li>버전 : PC, 모바일, 태블릿</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/hbpaper-re">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/hbpaper-re/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/hbpaper-re/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/hbpaper-re" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
@@ -417,14 +426,14 @@
                         <img src="img/ppeum.png" alt="쁨클리닉">
                         <ul>
                             <li class="h3">쁨클리닉</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/ppeum">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/ppeum/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/ppeum/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/ppeum" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
@@ -432,30 +441,29 @@
                         <img src="img/coach.png" alt="COACHYOU">
                         <ul>
                             <li class="h3">COACHYOU</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/pf-coach-you">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/pf-coach-you/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/coach-you/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/coach-you" target="_blank">깃소스</a>
                             </li>
                             </ul>
                     </li>
-
                      <li class="vogue">
                         <img src="img/vogue.png" alt="VOGUE">
                         <ul>
                             <li class="h3">VOGUE</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC</li>
                             <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
                             <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/vogue">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/vogue/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/vogue/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/vogue" target="_blank">깃소스</a>
                             </li>
                           </ul>
                     </li>
@@ -463,29 +471,29 @@
                         <img src="img/pf1.png" alt="ACCUNIQ">
                         <ul data-aos-delay="300">
                             <li class="h3">ACCUNIQ</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
+                            <li>클론 코딩 제작</li>
                             <li>버전 : PC</li>
                             <li>사용 툴 : HTML5, CSS3</li>
                             <li>참여도 : 수업 중 클론코딩 참여</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/accuniq">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/accuniq/">웹 사이트</a>
+                                <a class="web" href="https://nahyeonsun.github.io/accuniq/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/accuniq" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="lpoint">
-                        <img src="img/lpoint.png" alt="LPOINT2">
-                        <ul>
-                            <li class="h3">L.POINT</li>
-                            <li>포트폴리오용 카피사이트 제작</li>
-                            <li>버전 : PC</li>
-                            <li>사용툴 : HTML5, CSS3</li>
-                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                    <li class="hline">
+                        <img src="img/hline.png" alt="나현선의포트폴리오">
+                        <ul data-aos-delay="300">
+                            <li class="h3">H-line's Portfolio</li>
+                            <li>개인홈페이지 제작</li>
+                            <li>버전 : PC, 모바일, 태블릿</li>
+                            <li>사용 툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
                             <li>페이지 : MAIN</li>
                             <li class="view flex">
-                                <a href="https://github.com/nahyeonsun/lpoint">깃소스</a>
-                                <a href="https://nahyeonsun.github.io/lpoint/">웹 사이트</a>
+                                <a class="figma" href="" target="_blank">피그마</a>
+                                <a href="https://github.com/nahyeonsun/personalv2" target="_blank">깃소스</a>
                             </li>
                         </ul>
                     </li>
@@ -497,7 +505,7 @@
             <div class="wrap">
                 <div data-aos="fade-right" data-aos-duration="1000" class="box1">
                     <h2 class="h2">contact</h2>
-                    <h3>NA HYEONSUN</h3>
+                    <p>문의하실 사항이 있으시면 언제든지 연락해 주세요.</p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" class="box2">
                     <p>

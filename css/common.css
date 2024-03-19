@@ -8,7 +8,7 @@
 }
 .paddingT50{
   
-  padding-top: 130px;
+  padding-top: 110px;
 }
 .paddingR50{
   padding-right: 50px;
@@ -37,7 +37,10 @@
   font-size: 34px;
 }
 .h5{
-  font-size: 24px;
+  margin-bottom: 60px;
+  font-size: 18px;
+  color: #686767;
+  font-weight: 400;
 }
 .h6{
   font-size: 20px;

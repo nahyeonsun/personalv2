@@ -3,6 +3,7 @@ header{
    height: 100px;
    position: absolute;
    width: 100%;
+   z-index: 1;
 }
 header .wrap{
    display: grid;
@@ -39,7 +40,7 @@ header ul li{
 header ul li a{
    color: #403F39;
    text-transform: uppercase;
-   padding: 0 20px;
+   padding: 0 30px;
    height: 100%;
    display: block;
    box-sizing: border-box;
@@ -47,6 +48,7 @@ header ul li a{
    align-items: center;
    font-size: 23px;   
    transition: 0.5s;
+   font-weight: 500;
 }
 header ul li a:hover{
    opacity: 0.5;

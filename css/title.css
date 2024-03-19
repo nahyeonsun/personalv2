@@ -9,40 +9,31 @@ div#title{
   background-image: url(../img/title.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  /*! z-index: -1; */
 }
 div#title div.wrap{
   
 } 
 div#title h2{ 
-   font-size: 120px;
+   font-size: 115px;
    line-height: 1.5;
    color: #403F39;
    font-family: "Playfair Display", serif;
    transform: translateY(-30px) !important;
    text-transform: capitalize;
-
-}
-div#title h2 span.block{   
-   font-size: 65px;
-   color: #403F39;
-   position: relative;
-}
-div#title h2 span.block::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 18%;
-    width: 4px;
-    height: 100%;
-    background-color: #403F39;
 }
 div#title h2 span.block.active::after{
     display: none;
 }
 div#title .mouse{ 
-  margin: 0 auto;
-  position: relative;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+}
+div#title .mouse:hover{
+  opacity: 0.4;
+  transition: 0.5s ease-in-out;
 }
 div#title .mouse a{ 
    background-repeat: no-repeat;
@@ -54,7 +45,6 @@ div#title .mouse a{
    top: 158px;
    border: 3px solid #403F39;
    border-radius: 24px;
-   position: absolute;
    font-size: 0;
 }
 div#title .mouse a::before{

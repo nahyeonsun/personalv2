@@ -1,9 +1,9 @@
 footer{  
-  background-color: #89847c;
+  background-color: #78736c;
   position: relative;
 }
 section#footer{
-  color: #d3cec4;
+  color: #eae6dd;
 }
 section#footer .wrap{
   text-align: center;
@@ -37,6 +37,7 @@ footer a.top::before{
   transition: all 1s;
   display: block;
   transition: 0.5s;
+  background-size: contain;
 }
 footer a.top:hover::before{  
   transform: translateY(-7px);
