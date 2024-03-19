@@ -690,7 +690,7 @@ section#portfolio .slick-dots{
   display: flex !important;
   width: 61%;
   position: static;
-  /*! margin: 0 auto; */
+  transform: translateY(-60px);
 }
 section#portfolio .slick-dots li button::before{
   font-size: 18px;
