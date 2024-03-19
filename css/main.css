@@ -39,6 +39,7 @@ section#about .profile{
   margin-top: 50px;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 section#about .profile .left{
   display: flex;
@@ -209,6 +210,8 @@ section#skill .wrap ul{
   flex-wrap: wrap;
   margin-right: 0;
   row-gap: 20px;
+  width: 1350px;
+  margin: 0 auto;
 }
 section#skill .wrap ul li{
    width: 50%;
@@ -292,6 +295,7 @@ section#skill .wrap ul li span{
   position: relative;
   z-index: 1;
   grid-column: 1 / span 2;
+  border-radius: 20px;
 }
 section#skill .wrap ul li span::before{
   content: "";
@@ -301,6 +305,7 @@ section#skill .wrap ul li span::before{
   left: 0;
   width: 20%;
   background-color: red;
+  border-radius: 20px;
 }
 section#skill .wrap ul li span.html{
 
@@ -797,9 +802,9 @@ section#contact .box2{
    justify-content: center;
 }
 section#contact .box2 p{
-   font-size: 20px;
    margin-right: 25px;
 }
+
 section#contact .box2 p .mail{
    background-image: url(../img/mail.svg);
    background-repeat: no-repeat;
@@ -821,12 +826,18 @@ section#contact .box2 p .call{
    height: 25px;
    position: relative;
    z-index: 1;
-   left: 65%;
-   top: 27px;
+   left: 45%;
+   top: 34px;
    font-size: 0;
 }
 section#contact .box2 p a{
-   color: #54514e;
+   color: #6f6a66;
+   font-size: 20px;
+}
+section#contact .box2 p:nth-child(2) a{
+  font-size: 32px !important;
+  font-weight: 600;
+  color: #3c3a38;
 }
 section#contact .box2 p a:hover{
    color: blue;
