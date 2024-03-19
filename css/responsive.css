@@ -235,8 +235,11 @@
   section#skill{
     height: fit-content;
   }
-  section#skill .wrap ul li{
+  section#skill .wrap ul{
     width: 100%;
+  }
+  section#skill .wrap ul li{
+    /*! width: 100%; */
     font-size: calc(18px * 0.7);
     height: calc(50px * 0.4);
   }
@@ -372,6 +375,7 @@
   section#portfolio .slick-dots{
     gap: 8px;
     width: 100%;
+    transform: translateY(-30px);
   }
   /* contact   */
   section#contact .wrap{

@@ -264,8 +264,8 @@ section#skill .wrap ul{
   flex-wrap: wrap;
   margin-right: 0;
   row-gap: 20px;
-  width: 1350px;
   margin: 0 auto;
+  width: 94%;
 }
 section#skill .wrap ul li{
    width: 50%;
