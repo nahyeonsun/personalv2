@@ -35,9 +35,8 @@ section#about .wrap p{
 }
 section#about .profile{
   display: flex;
-  column-gap: 45px;
+  column-gap: 65px;
   margin-top: 50px;
-  align-items: center;
   position: relative;
   justify-content: center;
 }
@@ -52,11 +51,27 @@ section#about .profile .left img{
   border-radius: 10%;
 }
 section#about .profile .left ul{  
-  display: flex;
+  display: grid;
   gap: 20px;
   padding-top: 20px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 section#about .profile .left ul li{
+  
+}
+section#about .profile .left ul li:nth-child(1){
+  grid-column: 1;
+  grid-row: 1;
+}
+section#about .profile .left ul li:nth-child(2){
+  grid-column: 2;
+  grid-row: 1;
+}
+section#about .profile .left ul li:nth-child(3){
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  justify-self: center;
 }
 section#about .profile .left ul li a{ 
   width: 90px;
@@ -74,6 +89,10 @@ section#about .profile .left ul li a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section#about .profile .left ul li:nth-child(3) a{
+  width: 150px;
+  
 }
 section#about .profile .left ul li a:hover{ 
   background-color: #403f39;
@@ -109,8 +128,8 @@ section#about .profile .left ul li:nth-child(2) a:hover::before{
 section#about .profile .right{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 32px;
+  grid-template-rows: auto auto;
+  column-gap: 70px;
 }
 section#about .profile .right .ab{
   grid-column: 1;
@@ -127,7 +146,7 @@ section#about .profile .right .ab ul{
   font-size: 16px;
 }
 section#about .profile li{
-  line-height: 1.6;
+  line-height: 1.8;
   font-size: 18px;
   opacity: 0.8;
 }
@@ -137,6 +156,8 @@ section#about .profile .ab li:first-child{
   font-weight: 600;
   color: #333;
   opacity: 1;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 section#about .profile .right .ej{
   grid-column: 1;
@@ -156,6 +177,39 @@ section#about .profile .right .ej ul{
 }
 section#about .profile .right .ej ul li{
 
+}
+section#about .profile .right .ej ul li a{
+  display: block;
+  width: 220px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+  background-color: #dcdcdc;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#about .profile .right .ej ul li a:hover {
+  background-color: #403f39;
+  color: white;
+}
+section#about .profile .right .ej ul li a::after{
+  content: "";
+  background-image: url(../img/cursor.png);
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+section#about .profile .right .ej ul li a:hover::after{
+  background-image: url(../img/cursorwhite.png);
 }
 section#about .profile .right .ej ul li span{
   display: initial;
@@ -313,12 +367,14 @@ section#skill .wrap ul li span.html{
 section#skill .wrap ul li span.html::before{
   width: 85%;
   background-color: #ff5722;
-  animation-name: htmlFill;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
 }
-@keyframes htmlFill{
+section#skill .wrap ul li.lineAni span.html::before{
+  animation-name: fill85;
+}
+@keyframes fill85{
   0% { 
     width: 0; 
   }
@@ -332,10 +388,12 @@ section#skill .wrap ul li span.ps{
 section#skill .wrap ul li span.ps::before{
   width: 90%;
   background-color: #001d35;
-  animation-name: fill90;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.ps::before{
+  animation-name: fill90;
 }
 @keyframes fill90{
   0% { 
@@ -351,10 +409,12 @@ section#skill .wrap ul li span.css{
 section#skill .wrap ul li span.css::before{
   width: 80%;
   background-color: #359afe;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.css::before{
+    animation-name: fill80;
 }
 @keyframes fill80{
   0% { 
@@ -370,22 +430,25 @@ section#skill .wrap ul li span.ai{
 section#skill .wrap ul li span.ai::before{
   width: 80%;
   background-color: #300;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
 }
-
+section#skill .wrap ul li.lineAni span.ai::before{
+    animation-name: fill80;
+}
 section#skill .wrap ul li span.jq{
 
 }
 section#skill .wrap ul li span.jq::before{
   width: 45%;
   background-color: #d64443;
-  animation-name: fill45;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.jq::before{
+    animation-name: fill45;
 }
 @keyframes fill45{
   0% { 
@@ -401,10 +464,12 @@ section#skill .wrap ul li span.pr{
 section#skill .wrap ul li span.pr::before{
   width: 80%;
   background-color: #00005a;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.pr::before{
+    animation-name: fill80;
 }
 section#skill .wrap ul li span.java{
 
@@ -412,10 +477,12 @@ section#skill .wrap ul li span.java{
 section#skill .wrap ul li span.java::before{
   width: 25%;
   background-color: #fed73b;
-  animation-name: fill25;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.java::before{
+    animation-name: fill25;
 }
 @keyframes fill25{
   0% { 
@@ -431,9 +498,11 @@ section#skill .wrap ul li span.ae{
 section#skill .wrap ul li span.ae::before{
   width: 25%;
   background-color: #a0a0fe;
-  animation-name: fill25;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+}
+section#skill .wrap ul li.lineAni span.ae::before{
+  animation-name: fill25;
 }
 section#skill .wrap ul li span.zen{
 
@@ -441,9 +510,11 @@ section#skill .wrap ul li span.zen{
 section#skill .wrap ul li span.zen::before{
   width: 80%;
   background-color: #1a1b1f;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+}
+section#skill .wrap ul li.lineAni span.zen::before{
+  animation-name: fill80;
 }
 section#skill .wrap ul li span.web{
 
@@ -451,9 +522,11 @@ section#skill .wrap ul li span.web{
 section#skill .wrap ul li span.web::before{
   width: 90%;
   background-color: #7dc726;
-  animation-name: fill90;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+}
+section#skill .wrap ul li.lineAni span.web::before{
+  animation-name: fill90;  
 }
 section#skill .wrap ul li span.sass{
 
@@ -461,9 +534,11 @@ section#skill .wrap ul li span.sass{
 section#skill .wrap ul li span.sass::before{
   width: 80%;
   background-color: #cb6598;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+}
+section#skill .wrap ul li.lineAni span.sass::before{
+  animation-name: fill80;  
 }
 section#skill .wrap ul li span.w3c{
 
@@ -471,10 +546,12 @@ section#skill .wrap ul li span.w3c{
 section#skill .wrap ul li span.w3c::before{
   width: 90%;
   background-color: #025ea3;
-  animation-name: fill90;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.w3c::before{
+  animation-name: fill90;  
 }
 section#skill .wrap ul li span.vv{
 
@@ -482,10 +559,12 @@ section#skill .wrap ul li span.vv{
 section#skill .wrap ul li span.vv::before{
   width: 80%;
   background-color: #27b2f6;
-  animation-name: fill80;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.vv::before{
+  animation-name: fill80;  
 }
 section#skill .wrap ul li span.figma{
 
@@ -493,20 +572,24 @@ section#skill .wrap ul li span.figma{
 section#skill .wrap ul li span.figma::before{
   width: 45%;
   background-color: #ff7563;
-  animation-name: fill45;
   animation-duration: 2s;
   animation-timing-function: ease-in;
 }
-section#skill .wrap ul li span.boot{
+section#skill .wrap ul li.lineAni span.figma::before{  
+  animation-name: fill45;
+}
+section#skill .wrap ul li span.kakao{
 
 }
-section#skill .wrap ul li span.boot::before{
+section#skill .wrap ul li span.kakao::before{
   width: 50%;
   background-color: #3497d9;
-  animation-name: fill50;
   animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-play-state: running;
+}
+section#skill .wrap ul li.lineAni span.kakao::before{
+  animation-name: fill50;
 }
 @keyframes fill50{
   0% { 
@@ -522,9 +605,11 @@ section#skill .wrap ul li span.vue{
 section#skill .wrap ul li span.vue::before{
   width: 10%;
   background-color: #4fba88;
-  animation-name: fill10;
   animation-duration: 2s;
   animation-timing-function: ease-in;
+}
+section#skill .wrap ul li.lineAni span.vue::before{
+  animation-name: fill10;
 }
 @keyframes fill10{
   0% { 
@@ -822,12 +907,12 @@ section#contact .box2 p .call{
    background-image: url(../img/call.svg);
    background-repeat: no-repeat;
    display: block;
-   width: 25px;
-   height: 25px;
+   width: 30px;
+   height: 30px;
    position: relative;
    z-index: 1;
    left: 45%;
-   top: 34px;
+   top: 40px;
    font-size: 0;
 }
 section#contact .box2 p a{

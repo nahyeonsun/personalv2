@@ -53,6 +53,7 @@
                     index--;
                 }
             }
+
             setInterval(type, 200); // 타이핑 속도 조절
 
         // 탑버튼을 클릭하면 상단으로 감
@@ -155,6 +156,8 @@
                     $("aside ul li").not("aside ul li:nth-child(3)").removeClass("rogo");
                     $("aside ul li:nth-child(3) a").addClass("borderB");
                     $("aside ul li a").not("aside ul li:nth-child(3) a").removeClass("borderB");
+                // 그래프바 애니
+                    $("section#skill .wrap ul li").addClass("lineAni");
                 }
             // 포트폴리오 영역에서 해당 메뉴 색상 변경
                 if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#skill").height()){
@@ -307,6 +310,7 @@
                         <ul>
                             <li><a href="https://www.canva.com/design/DAF7WKxqVyU/YN7Xj1s4XMJVhEfLNVlyFQ/view?utm_content=DAF7WKxqVyU&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel#1" target="_blank">이력서</a></li>
                             <li><a href="https://github.com/nahyeonsun" target="_blank">깃허브</a></li>
+                            
                         </ul>
                     </div>
                     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="right">
@@ -322,6 +326,7 @@
                         <div class="ej">
                             <h3 class="h3">EDUCATION & JOP EXPERIENC</h3>
                             <ul>
+                                <li><a href="https://drive.google.com/drive/folders/1LGJxZQpz41yfpy8YcV8IGbBqt6iMHeF_" target="_blank">수업 참여 자료 보러가기</a></li>
                                 <li>2023.11 ~ 2024.03 <span class="block">이젠 모란 웹디자인 & 퍼블리셔과정 수료</span></li>
                                 <li>2016.07 ~ 2023.08 <span class="block">아름방송 네트워크 근무</span></li>
                                 <li>2014.03 ~ 2017.02 <span class="block">성남테크노과학고등학교 졸업</span><li>
@@ -366,7 +371,7 @@
                     <li>웹표준<span class="w3c"> 70%</span></li>
                     <li>Visual Studio Code<span class="vv"> 70%</span></li>
                     <li>figma<span class="figma"> 70%</span></li>
-                    <li>카카오 오븐<span class="boot"> 70%</span></li>
+                    <li>카카오 오븐<span class="kakao"> 70%</span></li>
                     <li>Vue<span class="vue"> 70%</span></li>
                 </ul>
             </div>
