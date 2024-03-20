@@ -179,10 +179,10 @@ section#about .profile .right .ej ul li{
 section#about .profile .right .ej ul li a{
   display: block;
   width: 220px;
-  height: 32px;
+  height: 35PX;
   font-size: 15px;
   border-radius: 15px;
-  line-height: 32px;
+  line-height: 35px;
   text-align: center;
   color: #333;
   background-color: #dcdcdc;
@@ -233,7 +233,7 @@ section#about ul{
 }
 /* skill */
 section#skill{
-  background-color: #dedfd9ab;
+  background-color: #dedfd98c;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -270,7 +270,7 @@ section#skill .wrap ul li{
    align-items: center;
    position: relative;
    font-size: 17px;
-   height: 50px;
+   height: 55px;
    display: grid;
    grid-template-columns: 40px 1fr;
    grid-template-rows: auto auto;
@@ -623,8 +623,8 @@ section#portfolio{
   height: 100vh;
   box-sizing: border-box;
   min-height: 700px;
-  background-image: url(../img/back.jpg);
   background-size: cover;
+  background-color: #e1e2dce5;
 }
 section#portfolio .wrap{
   display: flex;
@@ -846,7 +846,7 @@ section#contact .wrap{
 section#contact .box1{  
    width: 700px;
    margin-right: 20px;
-   background-color: #c2c2c282;
+   background-color: #e3e3e3;
    text-align: center;
    height: 300px;
    border-radius: 50px 0 50px 0;
