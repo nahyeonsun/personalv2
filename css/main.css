@@ -896,10 +896,10 @@ section#contact .box2 p .mail{
    display: block;
    width: 25px;
    height: 25px;
-   position: relative;
-   z-index: 1;
-   left: 50%;
-   top: 25px;
+   /*! position: relative; */
+   /*! z-index: 1; */
+   /*! left: 50%; */
+   /*! top: 25px; */
    font-size: 0;
 }
 section#contact .box2 p .call{
@@ -908,7 +908,7 @@ section#contact .box2 p .call{
    display: block;
    width: 30px;
    height: 30px;
-   position: relative;
+   /*! position: relative; */
    z-index: 1;
    left: 54%;
    top: 39px;
@@ -918,6 +918,11 @@ section#contact .box2 p .call{
 section#contact .box2 p a{
    color: #6f6a66;
    font-size: 20px;
+   display: block;
+   display: flex;
+   justify-content: flex-end;
+   gap: 13px;
+   align-items: center;
 }
 section#contact .box2 p:nth-child(2) a{
   font-size: 32px !important;
