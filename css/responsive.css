@@ -5,6 +5,9 @@
   section{
     padding: 150px 0 !important;
   }
+  section{
+    padding: 70px 0 !important;
+  }
   .wrap{
     padding: 20px;
     width: 100vw !important;
@@ -87,10 +90,6 @@
     font-size: calc(18px * 0.8);
   }
   /*  portfolio  */
-  section#portfolio{
-    
-  height: fit-content;
-  }
   section#portfolio .slick-dots li button::before{   
     font-size: calc(18px * 0.8);
     /*! content: "●" !important; */
@@ -109,10 +108,9 @@
     display: none;
   }
   /* contact   */
-  section#contact .wrap{
-    flex-direction: column;
-    row-gap: 22px;
-    align-items: end;
+  section#contact .box1 p{
+    
+  font-size: calc(18px * 0.8);
   }
   section#contact .box2 p a{ 
     font-size: calc(20px * 0.8);
@@ -122,11 +120,12 @@
   font-size: calc(32px * 0.8) !important;
   }
   section#contact .box2 p .mail{
-    left: calc(41% * 1.2);
+    left: 30%;
+    top: 24px;
   }
   section#contact .box2 p .call{
-    left: 55%;
-    top: 35px;
+    left: 32%;
+    top: 39px;
   }
   section#footer .wrap{
     padding: 0;
@@ -386,17 +385,17 @@
     flex-direction: column;
   }
   section#contact .box1{  
-    width: 310px;
-    height: 150px;
-    row-gap: 10px;
+    width: calc(600px * 0.5);
+    height: calc(300px * 0.5);
     margin-bottom: 15px;
+    margin-right: 0;
   }
   section#contact .box1 p{
     
   font-size: calc(18px * 0.7);
   }
   section#contact .box1 h2::after{
-    width: 310px !important;
+    width: 300px !important;
     margin-top: 13px;
     transform: translateY(0px) !important;
   }
@@ -404,16 +403,16 @@
     font-size: calc(30px * 0.8);
   }
   section#contact .box2 {  
-    width: 310px;
-    height: 150px;
+  width: calc(600px * 0.5);
+  height: calc(300px * 0.5);
   }
   section#contact .box2 p .mail{ 
-    left: 19%;
-    top: 24px;
+    left: 16%;
+    top: 23px;
   }
   section#contact .box2 p .call{
-    left: 25%;
-    top: 38px;
+    left: 19%;
+    top: 41px;
   }
   /*  footer  */
   section#footer .wrap p{  
