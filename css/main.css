@@ -51,11 +51,9 @@ section#about .profile .left img{
   border-radius: 10%;
 }
 section#about .profile .left ul{  
-  display: grid;
+  display: flex;
   gap: 20px;
   padding-top: 20px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
 }
 section#about .profile .left ul li{
   
@@ -181,10 +179,10 @@ section#about .profile .right .ej ul li{
 section#about .profile .right .ej ul li a{
   display: block;
   width: 220px;
-  height: 30px;
+  height: 32px;
   font-size: 15px;
   border-radius: 15px;
-  line-height: 30px;
+  line-height: 32px;
   text-align: center;
   color: #333;
   background-color: #dcdcdc;
