@@ -28,6 +28,7 @@ footer a.top{
   transition: 1s;
   background: #403f39;
   border-radius: 50%;
+  transition: 0.5s;
 }
 footer a.top::before{
   content: "";
@@ -44,4 +45,5 @@ footer a.top:hover::before{
 }
 .hideTop{
   display: none !important;
+  transition: 0.5s;
 }

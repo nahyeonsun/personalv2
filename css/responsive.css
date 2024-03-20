@@ -13,7 +13,7 @@
     width: 100vw !important;
   }
   section#portfolio .slick-dots{
-    width: 82%;
+    width: 90%;
   }
   section#footer{
     padding: 0 !important;
@@ -59,7 +59,10 @@
     width: 100vw;
   }
   div#title h2{
-    font-size: calc(130px * 0.65);
+    font-size: calc(130px * 0.7);
+  }
+  div#title p{
+    transform: translate(20%, 20px);
   }
   div#title h2 span{
     font-size: calc(70px * 1) !important;
@@ -77,9 +80,6 @@
   section#about .profile{
     column-gap: 20px;
     margin-top: 0;
-  }
-  section#about .profile .left img{
-    width: calc(320px * 0.7);
   }
   section#about .profile .right{
     gap: 20px;
@@ -123,12 +123,12 @@
   font-size: calc(32px * 0.8) !important;
   }
   section#contact .box2 p .mail{
-    left: 30%;
-    top: 24px;
+    /*! left: 30%; */
+    /*! top: 24px; */
   }
   section#contact .box2 p .call{
-    left: 32%;
-    top: 39px;
+    /*! left: 32%; */
+    /*! top: 39px; */
   }
   section#footer .wrap{
     padding: 0;
@@ -193,6 +193,7 @@
   div#title p{
     
   font-size: calc(19px * 0.75);
+  transform: translate(0,10px);
   }
   /*  about  */
   section#about{    

@@ -5,6 +5,7 @@ section#about{
   display: flex;
   flex-direction: column;
   background-color: #7d717517;
+  box-sizing: border-box;
 }
 section#about iframe{
 }
@@ -239,7 +240,8 @@ section#skill{
   display: flex;
   flex-direction: column;
   min-height: 700px;
-  padding-top: 85px;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 section#skill .wrap{
   
@@ -744,7 +746,7 @@ section#portfolio .wrap ul.list li .view a.web:nth-child(1):hover::before{
   background-image: url(../img/explorewhite.png);
 }
 section#portfolio .wrap ul.list li .view a.figma{
-  width: 90px;
+  width: 110px;
 }
 section#portfolio .wrap ul.list li .view a.figma::before{
   content: "";
