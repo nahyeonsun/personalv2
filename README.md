@@ -14,23 +14,24 @@
 - 경력, 학력, 기술 등을 소개하여, 취업을 위한 자료 제공.
 
 ## 포트폴리오 목록
-![한강식품](https://github.com/nahyeonsun/personalv2/blob/main/img/hangang.png)
 - [한강식품](https://nahyeonsun.github.io/hangangfood/)
-![hite 진로](https://github.com/nahyeonsun/personalv2/blob/main/img/pf4.png)
 - [hite 진로](https://nahyeonsun.github.io/pf-5Hitejinro/)	
 - [HB PAPER-RE](https://nahyeonsun.github.io/hbpaper-re/)
-![쁨의원](https://github.com/nahyeonsun/personalv2/blob/main/img/ppeum.png)
 - [쁨 의원](https://nahyeonsun.github.io/ppeum/)
 - [COACHYOU](https://nahyeonsun.github.io/pf-coach-you/)
-  ![vogue](https://raw.githubusercontent.com/nahyeonsun/personalv2/main/img/vogue.png)
 - [VOGUE](https://nahyeonsun.github.io/vogue/)
-- [ACCUNI](https://nahyeonsun.github.io/accuniq/)
+- [ACCUNIQ](https://nahyeonsun.github.io/accuniq/)
 		
 ## 포트폴리오 스크린샷
+![한강식품](https://github.com/nahyeonsun/personalv2/blob/main/img/hangang.png)
+![hite 진로](https://github.com/nahyeonsun/personalv2/blob/main/img/pf4.png)
+![HB PAPER-RE](https://github.com/nahyeonsun/personalv2/blob/main/img/hbre.png)
+![쁨의원](https://github.com/nahyeonsun/personalv2/blob/main/img/ppeum.png)
+![COACHYOU](https://github.com/nahyeonsun/personalv2/blob/main/img/coach.png)
+![VOGUE](https://raw.githubusercontent.com/nahyeonsun/personalv2/main/img/vogue.png)
+![ACCUNIQ](https://github.com/nahyeonsun/personalv2/blob/main/img/pfq.png)
 
-
-
-![www]<h3 align="left">Languages and Tools:</h3>
+<h3 align="left">Languages and Tools:</h3>
 <p align="left" style="white-space: pre-line; display: flex;">
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
