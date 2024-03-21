@@ -23,21 +23,9 @@
 - [ACCUNI](https://nahyeonsun.github.io/accuniq/)
 		
 ## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
-![pf1](https://github.com/nahyeonsun/personalv2/assets/150096472/762e5855-516e-4394-a98f-61a0caa13114)
 
-![pf2](https://github.com/nahyeonsun/personalv2/assets/150096472/f2286a61-73c2-4a1c-9af4-f8c03185c71a)
-
-![pf3](https://github.com/nahyeonsun/personalv2/assets/150096472/22d0c2bd-0920-4be9-8def-3d4cdbd54269)
-
-![pf4](https://github.com/nahyeonsun/personalv2/assets/150096472/2a1d6c20-ed17-4df1-878e-f03ac0e6a085)
-
-![pf5](https://github.com/nahyeonsun/personalv2/assets/150096472/e3756678-ed72-4af1-8a39-8e83a515d038)
-
-![pf6](https://github.com/nahyeonsun/personalv2/assets/150096472/fa244746-df49-4aa9-9fbd-c82fda6fb987)
-
-![pf7]
-![pf8]
-![pf9]
+![쁨의원](https://github.com/nahyeonsun/personalv2/blob/main/img/ppeum.png)
+![vogue](https://raw.githubusercontent.com/nahyeonsun/personalv2/main/img/vogue.png)
 ![www]<h3 align="left">Languages and Tools:</h3>
 <p align="left" style="white-space: pre-line; display: flex;">
 	<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
