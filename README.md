@@ -22,7 +22,7 @@
 - [VOGUE](https://nahyeonsun.github.io/vogue/)
 - [ACCUNI](https://nahyeonsun.github.io/accuniq/)
 		
-## 스크린샷 또는 데모(포트폴리오 웹사이트의 스크린샷을 추가)
+## 포트폴리오 스크린샷
 
 ![쁨의원](https://github.com/nahyeonsun/personalv2/blob/main/img/ppeum.png)
 ![vogue](https://raw.githubusercontent.com/nahyeonsun/personalv2/main/img/vogue.png)
