@@ -1,4 +1,3 @@
-### https://nahyeonsun.github.io/personalv2/
 ## 프로젝트 명 
 ### [H_line Portfolio](https://nahyeonsun.github.io/personalv2/)
 ## 프로젝트 목표
