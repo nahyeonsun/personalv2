@@ -5,29 +5,16 @@
 제작한 프로젝트들을 전시하여 역량을 보여줍니다.
 경력, 학력, 기술 등을 소개하여, 취업을 위한 자료 제공.
 
-## 기술 / 사용 툴
-- HTML
-- css3
-- sass
-- javascript
-- jquery
-- photoshop
-- illustrator
-- 젠코딩
-- Sass
-- 비주얼스튜디오
-- 웹 접근성
-- 웹 표준성
-- 카카오오븐
-- premiere pro
-- after effects
+## 사용언어 및 개발환경
+- 사용한 기술: HTML5, CSS3, JavaScript, jQuery
+- 디자인 소프트웨어: Adobe Photoshop, Adobe Illustrator
+- IDE: Visual Studio Code
 
 ## 프로젝트 목적
 - 제작한 프로젝트들을 전시하여 역량을 보여줍니다.
 - 경력, 학력, 기술 등을 소개하여, 취업을 위한 자료 제공.
 
 ## 포트폴리오 목록
-(작품들을 나열하고 각 작품에 대한 간략한 설명과 링크 제공)
 - [한강식품](https://nahyeonsun.github.io/hangangfood/)
 - [hite 진로](https://nahyeonsun.github.io/pf-5Hitejinro/)	
 - [HB PAPER-RE](https://nahyeonsun.github.io/hbpaper-re/)
@@ -66,6 +53,6 @@
 </p>
 
 ## 작성자 정보
--hyeonsun1223@gmail.com
--010-2756-2972
+- **010-2756-2972**
+- hyeonsun1223@gmail.com
 
