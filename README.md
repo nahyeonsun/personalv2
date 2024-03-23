@@ -29,7 +29,7 @@
 ![쁨의원](https://github.com/nahyeonsun/personalv2/blob/main/img/ppeum.png)
 ![COACHYOU](https://github.com/nahyeonsun/personalv2/blob/main/img/coach.png)
 ![VOGUE](https://raw.githubusercontent.com/nahyeonsun/personalv2/main/img/vogue.png)
-![ACCUNIQ](https://github.com/nahyeonsun/personalv2/blob/main/img/pfq.png)
+![ACCUNIQ](https://github.com/nahyeonsun/personalv2/blob/main/img/pf1.png)
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left" style="white-space: pre-line; display: flex;">
