@@ -164,7 +164,7 @@ section#about .profile .right .ej{
   grid-row: 2;
 }
 section#about .profile .right .ej h3{
-  margin: 20px 0;
+  margin-bottom: 20px;
   font-size: 26px;
   color: #555;
   font-weight: 600;
