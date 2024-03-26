@@ -57,38 +57,39 @@
             });
             
         // 대메뉴 클릭 시 페이지 스크롤 이동
-        // about
-            $("header ul li:nth-child(1) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()},800); 
-                    return false; 
-                }
-            );
-        // skill
-            $("header ul li:nth-child(2) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*2},800); 
-                    return false; 
-                }
-            );
-        // portfolio
-            $("header ul li:nth-child(3) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*3},800); 
-                    return false; 
-                }
-            );
-        // contact
-            $("header ul li:nth-child(4) a").click(
-                function(){
-                    $("html,body").animate({scrollTop:$(window).height()*4},800); 
-                    return false; 
-                }
-            );
+         //1번코드 종료
+			var c1p;
+			var c2p;
+			var c3p;
+            var c4p;
+			//각 컨텐츠의 위치(위에서 떨어져있는)
+			//$("요소").offset().top : #area1요소의 위치(위에서부터의)값
+			c1p=$("#about").offset().top; 
+			c2p=$("#skill").offset().top;
+			c3p=$("#portfolio").offset().top;
+            c4p=$("#contact").offset().top;
+
+			// 메뉴클릭시 해당컨텐츠로 페이지스크롤
+			$("header ul li:nth-child(1) a").click(function(){
+				$("html,body").animate({scrollTop:c1p},1000);
+                return false;
+			});
+			$("header ul li:nth-child(2) a").click(function(){
+				$("html,body").animate({scrollTop:c2p},1000);
+                return false;
+			});
+			$("header ul li:nth-child(3) a").click(function(){
+				$("html,body").animate({scrollTop:c3p},1000);
+                return false;
+			});
+            $("header ul li:nth-child(4) a").click(function(){
+				$("html,body").animate({scrollTop:c4p},1000);
+                return false;
+			});
         // 타이틀 하단에 있는 마우스 클릭하면 어바웃 페이지로 이동
             $("div#title .mouse a").click(
                 function(){
-                    $("html,body").animate({scrollTop:$(window).height()},800); 
+                    $("html,body").animate({scrollTop:c1p},800); 
                     return false; 
                 }
             );
