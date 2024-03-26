@@ -148,6 +148,7 @@ section#about .profile li{
   line-height: 1.8;
   font-size: 18px;
   opacity: 0.8;
+  margin-left: 15px;
 }
 section#about .profile .ab li:first-child{
   font-size: 48px;
@@ -179,7 +180,7 @@ section#about .profile .right .ej ul li{
 }
 section#about .profile .right .ej ul li a{
   display: block;
-  width: 220px;
+  width: 190px;
   height: 35PX;
   font-size: 15px;
   border-radius: 15px;
@@ -887,6 +888,7 @@ section#contact .box2{
 }
 section#contact .box2 p{
    margin-right: 25px;
+   margin-top: 20px;
 }
 
 section#contact .box2 p .mail{
