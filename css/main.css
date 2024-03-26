@@ -746,18 +746,6 @@ section#portfolio .wrap ul.list li .view a.web:nth-child(1)::before{
 section#portfolio .wrap ul.list li .view a.web:nth-child(1):hover::before{
   background-image: url(../img/explorewhite.png);
 }
-section#portfolio .wrap ul.list li .view a.figma{
-  width: 110px;
-}
-section#portfolio .wrap ul.list li .view a.figma::before{
-  content: "";
-  background-image: url(../img/figma.png);
-  width: 20px;
-  height: 20px;
-  background-size: cover;
-  margin-right: 5px;
-  opacity: 0.8;
-}
 section#portfolio .wrap ul.list li .view a:nth-child(2){
     width: 90px;
 }
