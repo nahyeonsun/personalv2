@@ -724,17 +724,14 @@ section#portfolio .wrap ul.list li .view a{
   margin-top: 10px;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
-section#portfolio .wrap ul.list li .view a{
-  
-}
 section#portfolio .wrap ul.list li .view a:hover{
   background-color: #403f39;
   color: white;
 }
-section#portfolio .wrap ul.list li .view a.web:nth-child(1){
+section#portfolio .wrap ul.list li .view a.web{
   width: 106px;
 }
-section#portfolio .wrap ul.list li .view a.web:nth-child(1)::before{
+section#portfolio .wrap ul.list li .view a.web::before{
   content: "";
   background-image: url(../img/explore.png);
   width: 20px;
@@ -743,11 +740,23 @@ section#portfolio .wrap ul.list li .view a.web:nth-child(1)::before{
   margin-right: 5px;
   opacity: 0.8;
 }
-section#portfolio .wrap ul.list li .view a.web:nth-child(1):hover::before{
+section#portfolio .wrap ul.list li .view a.web:hover::before{
   background-image: url(../img/explorewhite.png);
 }
+section#portfolio .wrap ul.list li .view a.figma {
+   width: 106px; 
+}
+section#portfolio .wrap ul.list li .view a.figma::before{
+  content: "";
+  background-image: url(../img/figma.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 5px;
+  opacity: 0.8;
+}
 section#portfolio .wrap ul.list li .view a:nth-child(2){
-    width: 90px;
+  width: 90px;
 }
 section#portfolio .wrap ul.list li .view a:nth-child(2)::before{
   content: "";
