@@ -4,6 +4,7 @@ footer{
 }
 footer .wrap{
   text-align: center;
+  padding: 10px 0;
 }
 footer .wrap p{
   line-height: 1.4;
