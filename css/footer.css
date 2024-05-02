@@ -2,19 +2,17 @@ footer{
   background-color: #78736c;
   position: relative;
 }
-section#footer{
-  color: #eae6dd;
-}
-section#footer .wrap{
+footer .wrap{
   text-align: center;
 }
-section#footer .wrap p{
+footer .wrap p{
   line-height: 1.4;
+  color: #eae6dd;
 }
 footer a.top{
   width: 60px;
   height: 60px;
-  color: #fff;
+  color: fff;
   position: fixed;
   bottom: 55px;
   right: 75px;
@@ -26,7 +24,7 @@ footer a.top{
   text-transform: uppercase;
   font-size: 15px;
   transition: 1s;
-  background: #403f39;
+  background: 403f39;
   border-radius: 50%;
   transition: 0.5s;
 }
