@@ -1,0 +1,99 @@
+/*타이틀영역*/
+div#title{
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 700px;
+  background-image: url(../img/title.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /*! z-index: -1; */
+}
+div#title div.wrap{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+div#title h2{ 
+   font-size: 130px;
+   color: #403F39;
+   font-family: "Playfair Display", serif;
+   text-transform: capitalize;
+   transform: translateY(-30px) !important;
+}
+div#title h2 span.block.active::after{
+    display: none;
+}
+div#title p{
+  font-size: 19px;
+  color: #555;
+  transform: translateY(20px);
+  text-align: end;
+  transform: translate(50%,20px);
+}
+div#title p span{
+  
+  line-height: 1.5;
+}
+div#title .mouse{ 
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#title .mouse::before{
+  content: "Start!";
+  display: block;
+  padding-bottom: 10px;
+  color: #403f39;
+}
+div#title .mouse:hover{
+  opacity: 0.4;
+  transition: 0.5s ease-in-out;
+}
+div#title .mouse a{ 
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 39px;
+   height: 61px;
+   display: block;
+   font-size: 0;
+   top: 158px;
+   border: 3px solid #403F39;
+   border-radius: 24px;
+   font-size: 0;
+}
+div#title .mouse a::before{
+  content: '';
+  border: 3px solid #403F39;
+  display: block;
+  height: 8px;
+  width: 0;
+  margin: 0 auto;
+  animation-name: down;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  font-size: 0;
+  border-radius: 30px;
+}
+@keyframes down {
+  0% { 
+    opacity: 0; 
+  }
+  20% { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateY(15px); 
+    opacity: 0;
+  }
+}

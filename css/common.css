@@ -1,0 +1,74 @@
+.wrap{
+  width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.padding50{
+  padding: 50px;
+}
+.paddingT50{
+  
+  padding-top: 110px;
+}
+.paddingR50{
+  padding-right: 50px;
+}
+.paddingB50{
+  padding-bottom: 25px;
+}
+.paddingL50{
+  padding-left: 50px;
+}
+.h1{
+  font-size: 75px;
+  color: white;
+}
+.h2{
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+.h3{
+  font-size: 35px;
+  width: fit-content;
+  color: #403f39;
+}
+.h4{
+  font-size: 34px;
+}
+.h5{
+  margin-bottom: 55px;
+  font-size: 18px;
+  color: #686767;
+  font-weight: 400;
+}
+.h6{
+  font-size: 20px;
+}
+.p{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4d473c;
+}
+/* flex */
+.flex{
+  display: flex;
+}
+.between{
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+}
+/* 블럭, 인라인 */
+.block{
+  display: block;
+}
+/* 정렬 */
+.center{
+  text-align: center;
+  color: white;
+}
+.hide{
+  display: none !important;
+}

@@ -1,0 +1,49 @@
+footer{  
+  background-color: #78736c;
+  position: relative;
+}
+section#footer{
+  color: #eae6dd;
+}
+section#footer .wrap{
+  text-align: center;
+}
+section#footer .wrap p{
+  line-height: 1.4;
+}
+footer a.top{
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  position: fixed;
+  bottom: 55px;
+  right: 75px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 1s;
+  background: #403f39;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+footer a.top::before{
+  content: "";
+  background-image: url(../img/arrow.svg);
+  width: 20px;
+  height: 20px;
+  transition: all 1s;
+  display: block;
+  transition: 0.5s;
+  background-size: contain;
+}
+footer a.top:hover::before{  
+  transform: translateY(-7px);
+}
+.hideTop{
+  display: none !important;
+  transition: 0.5s;
+}

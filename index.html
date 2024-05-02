@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nahyeonsun.github.io/personalv2/">
+    <meta property="og:description" content="모바일 웹 퍼블리셔 취업을 위한 개인 포트폴리오 사이트입니다">
+    <meta property="og:keywords" content="개인 포트폴리오 웹 디자인 웹 퍼블리셔 개인 홈페이지 ">
+    <meta property="og:title" content="모바일 개인 홈페이지 : 예비 퍼블리셔">
+    <meta name="description" content="웹 퍼블리셔 취업을 위한 개인 포트폴리오 사이트입니다.">
+    <meta name="keywords" content="개인 포트폴리오 웹 디자인 웹 퍼블리셔 개인 홈페이지">
+    <meta  name="og:image"  content="https://nahyeonsun.github.io/personalv2/img/pf.png">
+
+    <title>H.line PORTFOLIO::예비 웹 퍼블리셔</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/asid.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- 자바스크립트 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // \n은 자바스크립트의 줄바꿈 표시
+            const text = "웹 세계에 새로운 도약을 준비하는 나현선입니다.\n저의 포트폴리오 이제 시작합니다!"; 
+            let index = 0;
+            let direction = 1;
+            function type() {
+                document.getElementById('typingText').innerHTML = text.slice(0, index).replace(/\n/g, "<br>");
+            // 1: 정방향, -1: 역방향
+                if (direction === 1) {
+                    index++;
+                } else {
+                    index--;
+                }
+            }
+            setInterval(type, 100); // 타이핑 속도 조절
+
+        // 탑버튼을 클릭하면 상단으로 감
+            $("footer a.top").click(function(){
+                $("html,body").animate({scrollTop:"0px"},2000);
+                return false;
+            });
+            
+        // 대메뉴 클릭 시 페이지 스크롤 이동
+         //1번코드 종료
+			var c1p;
+			var c2p;
+			var c3p;
+            var c4p;
+			//각 컨텐츠의 위치(위에서 떨어져있는)
+			//$("요소").offset().top : #area1요소의 위치(위에서부터의)값
+			c1p=$("#about").offset().top; 
+			c2p=$("#skill").offset().top;
+			c3p=$("#portfolio").offset().top;
+            c4p=$("#contact").offset().top;
+
+			// 메뉴클릭시 해당컨텐츠로 페이지스크롤
+			$("header ul li:nth-child(1) a").click(function(){
+				$("html,body").animate({scrollTop:c1p},1000);
+                return false;
+			});
+			$("header ul li:nth-child(2) a").click(function(){
+				$("html,body").animate({scrollTop:c2p},1000);
+                return false;
+			});
+			$("header ul li:nth-child(3) a").click(function(){
+				$("html,body").animate({scrollTop:c3p},1000);
+                return false;
+			});
+            $("header ul li:nth-child(4) a").click(function(){
+				$("html,body").animate({scrollTop:c4p},1000);
+                return false;
+			});
+        // 타이틀 하단에 있는 마우스 클릭하면 어바웃 페이지로 이동
+            $("div#title .mouse a").click(
+                function(){
+                    $("html,body").animate({scrollTop:c1p},800); 
+                    return false; 
+                }
+            );
+        // 사이드메뉴 클릭 시 페이지 스크롤 이동
+            $("aside ul li:nth-child(1) a").click(function(){
+                $("html,body").animate({scrollTop:"0px"},800);
+                return false; 
+            });
+            $("aside ul li:nth-child(2) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(3) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*2},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(4) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*3},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(5) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*4},800); 
+                return false; 
+            });
+            // 스크롤이벤트
+            $(window).scroll(function(){
+                if($(window).scrollTop()<$("#title").height()){ 
+                // 대메뉴
+                    $("header ul li a").removeClass("currentgnb");
+                // 어사이드메뉴
+                    $("aside ul li:nth-child(1)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(1)").removeClass("rogo");
+                    $("aside ul li:nth-child(1) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(1) a").removeClass("borderB");
+                    $("footer a.top").addClass("hideTop");
+                } else{
+                    $("footer a.top").removeClass("hideTop");
+                }
+            // 어바웃 영역에서 해당 메뉴 색상 변경
+                if($(window).scrollTop()>=$("#about").height()){ 
+                // 대메뉴
+                    $("header ul li:nth-child(1) a").addClass("currentgnb"); 
+                    $("header ul li a").not("header ul li:nth-child(1) a").removeClass("currentgnb");
+                // 어사이드메뉴
+                    $("aside ul li:nth-child(2)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(2)").removeClass("rogo");
+                    $("aside ul li:nth-child(2) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(2) a").removeClass("borderB");
+                    // 타이틀 부분에서 탑버튼 숨기기
+                    // $("footer a.top").fadeOut();
+                }
+            // 스킬 영역에서 해당 메뉴 색상 변경
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()){
+                // 대메뉴
+                    $("header ul li:nth-child(2) a").addClass("currentgnb");
+                    $("header ul li a").not("header ul li:nth-child(2) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(3)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(3)").removeClass("rogo");
+                    $("aside ul li:nth-child(3) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(3) a").removeClass("borderB");
+                // 그래프바 애니
+                    $("section#skill .wrap ul li").addClass("lineAni");
+                }
+            // 포트폴리오 영역에서 해당 메뉴 색상 변경
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#skill").height()){
+                // 대메뉴
+                    $("header ul li:nth-child(3) a").addClass("currentgnb"); 
+                    $("header ul li a").not("header ul li:nth-child(3) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(4)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(4)").removeClass("rogo");
+                    $("aside ul li:nth-child(4) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(4) a").removeClass("borderB");   
+                }
+            // 콘택트 영역에서 해당 메뉴 색상 변경
+                if($(window).scrollTop()>=$("#title").height()+$("#about").height()+$("#skill").height()+$("#portfolio").height()){
+                // 대메뉴
+                    $("header ul li:nth-child(4) a").addClass("currentgnb"); 
+                    $("header ul li a").not("header ul li:nth-child(4) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(5)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(5)").removeClass("rogo");
+                    $("aside ul li:nth-child(5) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(5) a").removeClass("borderB");  
+                }
+    
+            });
+        });
+    </script>
+
+     <!-- slick -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script>
+         $(document).ready(function(){
+            $('.pfSlide').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplaySpeed: 2000,
+                speed:1000,
+                arrow:true,
+                dots:true,
+                responsive:[
+                    {
+                    breakpoint: 769,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 2000,
+                        speed:1000,
+                        arrow:false,
+                        dots:true
+                    }
+                    }
+                ]
+            });
+         });
+    </script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function(){
+            AOS.init();
+        });
+    </script>
+
+    <!-- 마우스 휠 -->
+    <script>
+        window.onload = function () {
+            var elm = ".box";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 800, complete: function () {
+                        }
+                    });
+                });
+            });
+            $("main>section").unwrap();
+            $("section:not(:#footer)").css("height","100%");
+        }
+    </script>
+
+</head>
+<body>
+    <!-- 메뉴영역 -->
+    <header class="box" data-aos="fade-down" data-aos-duration="500">
+        <div class="wrap">
+            <h1><a href="#">nhs</a></h1>
+            <ul>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="">SKILL</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 타이틀영역 -->
+    <div id="title" class="box">
+        <div class="wrap">
+            <h2 class="h2">hey, i'm H.line</h2>
+            <p>
+                <span id="typingText"></span>
+            </p>
+            <span class="mouse"><a href="">scroll</a></span>
+        </div>
+    </div>    
+    <!-- 메인영역 -->
+    <main>
+        <section id="about" class="box paddingT50 paddingB50 borderR30  marginT50">
+            <div class="wrap">
+                <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">profile</h2>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">웹 디자인과 퍼블리싱이 가능한 저를 소개합니다.</p>
+                <div class="profile">
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="left">
+                        <img src="img/my2.jpg" alt="내 사진">
+                        <ul>
+                            <li><a href="https://www.canva.com/design/DAGAnUxBK84/ocuaEby6Tbxb4G21aKqmtg/view" target="_blank">이력서</a></li>
+                            <li><a href="https://github.com/nahyeonsun" target="_blank">깃허브</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="right">
+                        <div class="ab">
+                            <h3 class="hide">ABOUT ME</h3>
+                            <ul>
+                                <li>나현선<li>
+                                <li>1998.12.23</li>
+                                <li>010-2756-2972</li>
+                                <li>hyeonsun1223@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="ej">
+                            <h3 class="h3">EDUCATION & CAREER</h3>
+                            <ul>
+                                <li><a href="https://drive.google.com/drive/folders/1LGJxZQpz41yfpy8YcV8IGbBqt6iMHeF_?hl=ko" target="_blank">학습 교과목 보기</a></li>
+                                <li>2023.11 ~ 2024.03 <span class="block">이젠 모란 웹디자인 & 퍼블리셔과정 수료</span></li>
+                                <li>2016.07 ~ 2023.08 <span class="block">아름방송 네트워크 근무</span></li>
+                                <li>2014.03 ~ 2017.02 <span class="block">성남테크노과학고등학교 졸업</span><li>
+                            </ul>
+                        </div>
+                        <div class="cre">
+                            <h3 class="h3">CERTIFICATE</h3>
+                            <ul>
+                                <li>2022.01 2종 보통 운전면허</li>
+                                <li>2016.07 컴퓨터그래픽스운용기능사</li>
+                                <li>2016.01 GTQ 일러스트 3급</li>
+                                <li>2015.10 GTQ 포토샵 1급</li>
+                                <li>2015.09 컴퓨터활용능력 2급</li>
+                                <li>2015.08 디지털영상편집 2급</li>
+                                <li>2014.10 디지털 정보활용능력 고급</li>
+                                <li>2014.07 GTQ 포토샵 2급</li>
+                                <li>2014.04 ITQ 한셀</li>
+                                <li>2013.10 ITQ 한쇼</li>
+                                <li>2013.10 ITQ 아래한글<li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- 스킬영역 -->
+        <section id="skill" class="box paddingT50 paddingB50 borderR30  marginT50">
+            <div class="wrap">
+                <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">skill</h2>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">여러 경험을 통한 검증된 능력을 보유하고 있습니다.</P>
+                <ul class="list flex between">
+                    <li>HTML5<span class="html"> 70%</span></li>
+                    <li>Photoshop<span class="ps"> 70%</span></li>
+                    <li>CSS3<span class="css"> 70%</span></li>
+                    <li>Illustrator<span class="ai"> 70%</span></li>
+                    <li>jQuery<span class="jq"> 70%</span></li>
+                    <li>premiere pro<span class="pr"> 70%</span></li>
+                    <li>Javascript<span class="java"> 70%</span></li>
+                    <li>after effects<span class="ae"> 70%</span></li>
+                    <li>젠코딩<span class="zen"> 70%</span></li>
+                    <li>웹접근성<span class="web"> 70%</span></li>
+                    <li>Sass<span class="sass"> 70%</span></li>
+                    <li>웹표준<span class="w3c"> 70%</span></li>
+                    <li>Visual Studio Code<span class="vv"> 70%</span></li>
+                    <li>figma<span class="figma"> 70%</span></li>
+                    <li>카카오 오븐<span class="kakao"> 70%</span></li>
+                    <li>Vue<span class="vue"> 70%</span></li>
+                </ul>
+            </div>
+        </section>
+        <!-- 포트폴리오영역 -->
+        <section id="portfolio" class="box paddingT50 paddingB50 borderR30 marginT50">
+            <div class="wrap">
+                <h2 data-aos="fade-down" data-aos-duration="1000" class="h2">portfolio</h2>
+                <P data-aos="fade-down" data-aos-duration="1000" class="h5">최근 5개월간 진행한 프로젝트입니다.</P>
+                <ul class="list flex pfSlide">
+                    <li class="hangang">
+                        <img src="img/hangang.png" alt="한강식품">
+                        <ul>
+                            <li class="h3">한강식품</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/hangangfood/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/hangangfood" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hite">
+                        <img src="img/pf4.png" alt="HITE 진로">
+                        <ul>
+                            <li class="h3">HITE 진로</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC, 모바일, 태블릿</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, Javascript</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                            <li>페이지 : MAIN, SUB</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/Hitejinro/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/Hitejinro" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hpre">
+                        <img src="img/hbre.png" alt="HB PAPER 리뉴얼">
+                        <ul>
+                            <li class="h3">HB PAPER 리뉴얼</li>
+                            <li>웹사이트 재디자인</li>
+                            <li>버전 : PC, 모바일, 태블릿</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/hbpaper-re/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/hbpaper-re" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ppeum">
+                        <img src="img/ppeum.png" alt="쁨클리닉">
+                        <ul>
+                            <li class="h3">쁨클리닉</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/ppeum/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/ppeum" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="coach">
+                        <img src="img/coach.png" alt="COACHYOU">
+                        <ul>
+                            <li class="h3">COACHYOU</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/coach-you/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/coach-you" target="_blank">깃소스</a>
+                            </li>
+                            </ul>
+                    </li>
+                     <li class="vogue">
+                        <img src="img/vogue.png" alt="VOGUE">
+                        <ul>
+                            <li class="h3">VOGUE</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/vogue/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/vogue" target="_blank">깃소스</a>
+                            </li>
+                          </ul>
+                    </li>
+                     <li class="accu">
+                        <img src="img/pf1.png" alt="ACCUNIQ">
+                        <ul data-aos-delay="300">
+                            <li class="h3">ACCUNIQ</li>
+                            <li>시각적 클론 코딩 제작</li>
+                            <li>버전 : PC</li>
+                            <li>사용 툴 : HTML5, CSS3</li>
+                            <li>참여도 : 수업 중 클론코딩 참여</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="web" href="https://nahyeonsun.github.io/accuniq/" target="_blank">웹사이트</a>
+                                <a href="https://github.com/nahyeonsun/accuniq" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hline">
+                        <img src="img/hline.png" alt="나현선의포트폴리오">
+                        <ul data-aos-delay="300">
+                            <li class="h3">H-line's Portfolio</li>
+                            <li>개인홈페이지 제작</li>
+                            <li>버전 : PC, 모바일, 태블릿</li>
+                            <li>사용 툴 : HTML5, CSS3, jQuery, javascript</li>
+                            <li>참여도 : 100%</li>
+                            <li>페이지 : MAIN</li>
+                            <li class="view flex">
+                                <a class="figma" href="https://www.figma.com/proto/0V1aWpsaza5jmoO6jc1uIu/Untitled?page-id=0%3A1&type=design&node-id=52-4188&viewport=-8603%2C252%2C0.17&t=btYFW9HDI5tYOBWF-1&scaling=min-zoom&starting-point-node-id=52%3A4188&mode=design" target="_blank">프로토타입</a>
+                                <a href="https://github.com/nahyeonsun/personalv2" target="_blank">깃소스</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 콘텍트영역 -->
+        <section id="contact" class="box paddingT50 paddingB50 borderR30  marginT50">
+            <div class="wrap">
+                <div data-aos="fade-down" data-aos-duration="1000" class="box1">
+                    <h2 class="h2">contact</h2>
+                    <p>문의하실 사항이 있으시면 언제든지 연락해 주세요 :)</p>
+                </div>
+                <div data-aos="fade-down" data-aos-duration="1000" class="box2">
+                    <p>
+                        <a href="mailto:hyeonsun1223@gmail.com">
+                            <span class="mail">mail</span>hyeonsun1223@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:010-2756-2972">
+                            <span class="call">call</span>010-2756-2972
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- 우측슬라이드아이콘 -->
+        <aside>
+            <ul>
+                <li class="rogo">
+                    <a class="borderB" href="">홈</a>
+                </li>
+                <li>
+                    <a href="">ABOUT</a>
+                </li>
+                <li>
+                    <a href="">SKILL</a>
+                </li>
+                <li>
+                    <a href="">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+        </aside>
+    <!-- 하단영역 -->
+    <section id="footer">
+        <footer class="box">
+            <h2 class="hide">portfolio</h2>
+            <div class="wrap">
+                <p>
+                    본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+                    <br>
+                    Copyright ⓒ2023. HYEON SUN Copyright All Rights Reserved.
+                </p>
+            </div>
+            <a href="" class="top hideTop">Top</a>
+        </footer>
+    </section>
+</body>
+</html>

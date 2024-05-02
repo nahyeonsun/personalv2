@@ -1,0 +1,73 @@
+/* 상단영역 */
+header{
+   height: 100px;
+   position: absolute;
+   width: 100%;
+   z-index: 1;
+}
+header .wrap{
+   display: grid;
+   grid-template-columns: 1fr auto;
+   height: 100%;
+   padding: 0 31px;
+   align-content: center;
+}
+header h1{
+   align-self: center;
+   position: relative;
+}
+header h1 a{
+   font-size: 0;
+   width:66px;
+   height: 70px;
+   background-image: url(../img/rogo.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   display: block;
+}
+header h1 a::before{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   background-color: #ffa50091;
+   border-radius: 50%;
+   z-index: -1;
+   top: -6px;
+   left: 26px;
+}
+header ul{   
+   display: flex;
+   height: 100%;
+   transition: 0.5s;
+}
+header ul.small{
+   transform: scale(0.7);
+   transform-origin: 100% 50%;
+}
+header ul li{
+   text-transform: uppercase;
+}
+header ul li a{
+   color: #403F39;
+   text-transform: uppercase;
+   padding: 0 30px;
+   height: 100%;
+   display: block;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   font-size: 23px;   
+   transition: 0.5s;
+   font-weight: 500;
+}
+header ul li a:hover{
+   opacity: 0.5;
+}
+.currentgnb{
+   text-decoration: underline;
+   color: #b93459;
+   transform: scale(1.2);
+}
